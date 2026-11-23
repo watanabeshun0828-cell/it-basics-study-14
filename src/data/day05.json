@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day05",
+  "day": 5,
+  "title": "開発の進め方とテスト",
+  "category": "マネジメント",
+  "goals": [
+    "開発方法の名前だけで品質や納期は保証されません。",
+    "正常系と境界・異常系、変更の影響を確認します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day05-s1",
+      "title": "段階と反復を理解する",
+      "paragraphs": [
+        "開発では、要件を決め、設計し、実装し、テストします。ウォーターフォールは段階を順に進める見方です。アジャイルは短い単位で確認と改善を繰り返します。どちらでも目的や確認の記録は必要です。",
+        "プロトタイプは、完成前に考え方や使い方を確かめる試作です。試作を見せたことだけで、本番運用の安全性や全機能が検証済みにはなりません。何を確かめたかを区別して記録します。"
+      ],
+      "keyPoint": "開発方法の名前だけで品質や納期は保証されません。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "段階と反復を理解するの見方",
+        "description": "開発方法の名前だけで品質や納期は保証されません。",
+        "items": [
+          {
+            "label": "要件",
+            "detail": "必要な条件"
+          },
+          {
+            "label": "設計・実装",
+            "detail": "形にする"
+          },
+          {
+            "label": "確認・改善",
+            "detail": "意図と比べる"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day05-s2",
+      "title": "テストで条件を確かめる",
+      "paragraphs": [
+        "単体テストは小さな処理、結合テストは処理同士のつながりを確認します。受入れテストでは、合意した要件を満たすかを利用側も確認します。正常な入力だけでなく、空欄や上限なども考えます。",
+        "変更の影響で、前に動いていた処理が壊れることがあります。回帰テストは、そのような影響を確かめるための確認です。実施した環境と結果、未実施の確認を分けましょう。"
+      ],
+      "keyPoint": "正常系と境界・異常系、変更の影響を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "テストで条件を確かめるの見方",
+        "description": "正常系と境界・異常系、変更の影響を確認します。",
+        "items": [
+          {
+            "label": "単体",
+            "detail": "小さな処理"
+          },
+          {
+            "label": "結合",
+            "detail": "つながり"
+          },
+          {
+            "label": "受入れ",
+            "detail": "合意条件"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day05-q01",
+      "sectionId": "ip26-day05-s1",
+      "category": "マネジメント",
+      "prompt": "短い期間で試作・確認・改善を繰り返す開発の考え方は？",
+      "explanation": "小さな単位で価値や結果を確かめます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "アジャイル"
+        },
+        {
+          "id": "c2",
+          "text": "すべての確認を廃止する方法"
+        },
+        {
+          "id": "c3",
+          "text": "実装後に要件を永久に決めない方法"
+        },
+        {
+          "id": "c4",
+          "text": "納品を一切しない方法"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day05-q02",
+      "sectionId": "ip26-day05-s1",
+      "category": "マネジメント",
+      "prompt": "ウォーターフォールの説明として適切なのは？",
+      "explanation": "段階的な進め方であり、品質や期間の保証ではありません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ず一日で完成する。"
+        },
+        {
+          "id": "c2",
+          "text": "要件、設計、実装、テストなどの段階を順に進める。"
+        },
+        {
+          "id": "c3",
+          "text": "テストを不要とする。"
+        },
+        {
+          "id": "c4",
+          "text": "変更の影響は一切発生しない。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day05-q03",
+      "sectionId": "ip26-day05-s1",
+      "category": "マネジメント",
+      "prompt": "プロトタイプを使う目的として適切なのは？",
+      "explanation": "試作で確かめた範囲と、本番で必要な確認を分けます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "本番の全検証を自動的に終了する。"
+        },
+        {
+          "id": "c2",
+          "text": "契約の確認を不要にする。"
+        },
+        {
+          "id": "c3",
+          "text": "早い段階で認識や使い方を確かめる。"
+        },
+        {
+          "id": "c4",
+          "text": "利用者に何も見せないために作る。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day05-q04",
+      "sectionId": "ip26-day05-s1",
+      "category": "マネジメント",
+      "prompt": "開発中の要望変更に対応する際の考え方は？",
+      "explanation": "方法の名前に関係なく、影響と合意を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべて無料で即時対応できると約束する。"
+        },
+        {
+          "id": "c2",
+          "text": "影響調査を省いて全機能を変える。"
+        },
+        {
+          "id": "c3",
+          "text": "変更の理由を記録しない。"
+        },
+        {
+          "id": "c4",
+          "text": "価値と影響を確認し、優先順位を見直す。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day05-q05",
+      "sectionId": "ip26-day05-s2",
+      "category": "マネジメント",
+      "prompt": "複数の処理が連携して注文を保存できるか確認するテストは？",
+      "explanation": "処理間の受け渡しを確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "結合テスト"
+        },
+        {
+          "id": "c2",
+          "text": "担当者の休暇申請"
+        },
+        {
+          "id": "c3",
+          "text": "単語の暗記だけ"
+        },
+        {
+          "id": "c4",
+          "text": "見積書の発行だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day05-q06",
+      "sectionId": "ip26-day05-s2",
+      "category": "マネジメント",
+      "prompt": "1〜100件を受け付ける入力欄の境界確認に適した値は？",
+      "explanation": "有効範囲の端と、そのすぐ外を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "50だけ"
+        },
+        {
+          "id": "c2",
+          "text": "0、1、100、101"
+        },
+        {
+          "id": "c3",
+          "text": "名前の文字色だけ"
+        },
+        {
+          "id": "c4",
+          "text": "常に10だけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day05-q07",
+      "sectionId": "ip26-day05-s2",
+      "category": "マネジメント",
+      "prompt": "表示色の変更後も保存機能が動くか確認する目的は？",
+      "explanation": "変更箇所と影響を受ける機能を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "仕様を一切変えないため"
+        },
+        {
+          "id": "c2",
+          "text": "権限を全員に付与するため"
+        },
+        {
+          "id": "c3",
+          "text": "変更による回帰を確かめる。"
+        },
+        {
+          "id": "c4",
+          "text": "利用者の入力を公開するため"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day05-q08",
+      "sectionId": "ip26-day05-s2",
+      "category": "マネジメント",
+      "prompt": "テスト結果の報告で適切なのは？",
+      "explanation": "実際に確かめた範囲を明確にします。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "一度動けば全端末で確認済みとする。"
+        },
+        {
+          "id": "c2",
+          "text": "失敗した条件を記録から消す。"
+        },
+        {
+          "id": "c3",
+          "text": "未実施も成功と記載する。"
+        },
+        {
+          "id": "c4",
+          "text": "確認した環境・条件・結果と未確認点を分ける。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

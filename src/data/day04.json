@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day04",
+  "day": 4,
+  "title": "システム企画と要件",
+  "category": "ストラテジ",
+  "goals": [
+    "機能と品質の条件を分け、確認できる形にします。",
+    "購入価格のほか、運用費と移行・確認を含めて考えます。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day04-s1",
+      "title": "利用者の要望を要件へする",
+      "paragraphs": [
+        "要件とは、仕組みが満たすべき条件です。予約の重複を防ぐなどの機能要件と、応答時間、使える時間帯、権限などの非機能要件を分けると、確認する観点が整理できます。",
+        "曖昧な「使いやすい」を、そのまま合意済みの条件にしないようにします。誰が、どの場面で、何を完了できる必要があるかを聞き、確認の方法を決めます。"
+      ],
+      "keyPoint": "機能と品質の条件を分け、確認できる形にします。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "利用者の要望を要件へするの見方",
+        "description": "機能と品質の条件を分け、確認できる形にします。",
+        "items": [
+          {
+            "label": "場面",
+            "detail": "誰が何をするか"
+          },
+          {
+            "label": "機能",
+            "detail": "何ができるか"
+          },
+          {
+            "label": "品質",
+            "detail": "どの条件で使えるか"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day04-s2",
+      "title": "調達と導入を見通す",
+      "paragraphs": [
+        "RFPは、発注する側が目的や要件を示し、提案を依頼するための文書です。価格だけでなく、運用、移行、保守なども含めて比べます。TCOは導入後も含めた所有・利用の総費用を考える見方です。",
+        "古いデータを新しい仕組みへ移すときは、項目や形式の対応を確認し、移行後の件数・合計を照合します。切替えに失敗した場合の戻し方と、利用者への案内も準備します。"
+      ],
+      "keyPoint": "購入価格のほか、運用費と移行・確認を含めて考えます。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "調達と導入を見通すの見方",
+        "description": "購入価格のほか、運用費と移行・確認を含めて考えます。",
+        "items": [
+          {
+            "label": "提案依頼",
+            "detail": "目的と条件を伝える"
+          },
+          {
+            "label": "比較",
+            "detail": "全体の費用と運用"
+          },
+          {
+            "label": "移行",
+            "detail": "照合と戻し方"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day04-q01",
+      "sectionId": "ip26-day04-s1",
+      "category": "ストラテジ",
+      "prompt": "予約の二重登録を防ぐことは、主にどちらの要件？",
+      "explanation": "システムが行う働きを表す条件です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "画面の壁紙だけの条件"
+        },
+        {
+          "id": "c2",
+          "text": "機能要件"
+        },
+        {
+          "id": "c3",
+          "text": "担当者の勤続年数"
+        },
+        {
+          "id": "c4",
+          "text": "機器の製造年月日"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day04-q02",
+      "sectionId": "ip26-day04-s1",
+      "category": "ストラテジ",
+      "prompt": "平日の9時から18時に利用できることは、主に何の条件？",
+      "explanation": "利用可能な時間などの品質条件です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "商品名の一覧"
+        },
+        {
+          "id": "c2",
+          "text": "会社の商号"
+        },
+        {
+          "id": "c3",
+          "text": "可用性などの非機能要件"
+        },
+        {
+          "id": "c4",
+          "text": "画面で表示する売上分類そのもの"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day04-q03",
+      "sectionId": "ip26-day04-s1",
+      "category": "ストラテジ",
+      "prompt": "「検索を速くする」を確認できる形へ近づけるには？",
+      "explanation": "測定可能な条件と正しさの両方を決めます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "速いと感じる人が一人いればよい。"
+        },
+        {
+          "id": "c2",
+          "text": "検索対象を決めずに作り始める。"
+        },
+        {
+          "id": "c3",
+          "text": "返る結果の正しさは確認しない。"
+        },
+        {
+          "id": "c4",
+          "text": "対象件数や検索条件、応答時間の目標を決める。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day04-q04",
+      "sectionId": "ip26-day04-s1",
+      "category": "ストラテジ",
+      "prompt": "新しい申請画面の要件を決める際の相手として適切なのは？",
+      "explanation": "異なる役割の流れを確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "申請者、承認者、運用担当者"
+        },
+        {
+          "id": "c2",
+          "text": "販売担当者だけ"
+        },
+        {
+          "id": "c3",
+          "text": "使わない人だけ"
+        },
+        {
+          "id": "c4",
+          "text": "機器の配送担当だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day04-q05",
+      "sectionId": "ip26-day04-s2",
+      "category": "ストラテジ",
+      "prompt": "RFPの主な目的は？",
+      "explanation": "提案者が前提をそろえて回答できるようにします。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "納品後の個人の感想だけを集める。"
+        },
+        {
+          "id": "c2",
+          "text": "目的・要件・条件を示して提案を求める。"
+        },
+        {
+          "id": "c3",
+          "text": "プログラムの命令を実行する。"
+        },
+        {
+          "id": "c4",
+          "text": "会計の領収書だけを保存する。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day04-q06",
+      "sectionId": "ip26-day04-s2",
+      "category": "ストラテジ",
+      "prompt": "架空の3年間費用。導入30万円、年保守6万円、その他なし。総額は？",
+      "explanation": "導入費だけでなく継続する費用を含めます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "30＋6×3＝48",
+          "operator": "sum",
+          "operands": [
+            30,
+            18
+          ],
+          "result": 48,
+          "unit": "万円",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "3年間の総費用",
+          "expected": 48,
+          "unit": "万円",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day04-q07",
+      "sectionId": "ip26-day04-s2",
+      "category": "ストラテジ",
+      "prompt": "移行した売上データの確認として適切なのは？",
+      "explanation": "抜けや形式の違いを、対応と数値の両面で確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "一行だけ開いて完了にする。"
+        },
+        {
+          "id": "c2",
+          "text": "画面の色だけを見る。"
+        },
+        {
+          "id": "c3",
+          "text": "件数・合計と項目の対応を移行前後で照合する。"
+        },
+        {
+          "id": "c4",
+          "text": "移行元は確認前に必ず消す。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day04-q08",
+      "sectionId": "ip26-day04-s2",
+      "category": "ストラテジ",
+      "prompt": "切替え前に戻し方を準備する理由は？",
+      "explanation": "切替えの失敗も想定して、連絡と復旧の手順を整えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "確認作業を完全になくすため。"
+        },
+        {
+          "id": "c2",
+          "text": "要件を決めないため。"
+        },
+        {
+          "id": "c3",
+          "text": "責任者を置かないため。"
+        },
+        {
+          "id": "c4",
+          "text": "問題が生じたときの業務中断を抑えるため。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

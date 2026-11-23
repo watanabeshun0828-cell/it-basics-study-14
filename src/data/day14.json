@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day14",
+  "day": 14,
+  "title": "分野をつないで総復習",
+  "category": "テクノロジ",
+  "goals": [
+    "目的から、要件・作業・確認へ筋道を立てます。",
+    "知識を場面に当てはめ、判断の理由を説明します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65",
+    "ipa-sme-security"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day14-s1",
+      "title": "目的・計画・実装をつなぐ",
+      "paragraphs": [
+        "新しい仕組みを考えるときは、目的と利用者の課題を先に確認します。要件を決め、作業と依存関係を整理し、必要な権限と確認方法を設計します。名称を覚えるだけでなく、どの場面で使う考え方かを説明しましょう。",
+        "この日の設例は、本アプリ独自の確認演習です。本試験の出題分布やIRTの評価を再現していません。分からなかった分野は復習と関連講義へ戻って確認できます。"
+      ],
+      "keyPoint": "目的から、要件・作業・確認へ筋道を立てます。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "目的・計画・実装をつなぐの見方",
+        "description": "目的から、要件・作業・確認へ筋道を立てます。",
+        "items": [
+          {
+            "label": "目的",
+            "detail": "誰の何を良くするか"
+          },
+          {
+            "label": "計画",
+            "detail": "要件と役割を決める"
+          },
+          {
+            "label": "確認",
+            "detail": "条件に合うか検証"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day14-s2",
+      "title": "情報と運用の判断を確かめる",
+      "paragraphs": [
+        "現場では、データの意味、アクセスする相手、利用条件、障害時の対応などが同時に関わります。便利なサービスの導入だけで、管理や確認の責任がなくなるわけではありません。必要な条件を短い言葉で説明します。",
+        "学習達成率と本試験の評価点は違うものです。ここでの正答率は収録した練習への回答の記録で、合格確率ではありません。別の教材や公式の案内で必要な範囲と受験条件を確認し、学習を続けましょう。"
+      ],
+      "keyPoint": "知識を場面に当てはめ、判断の理由を説明します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security"
+      ],
+      "diagram": {
+        "title": "情報と運用の判断を確かめるの見方",
+        "description": "知識を場面に当てはめ、判断の理由を説明します。",
+        "items": [
+          {
+            "label": "情報",
+            "detail": "意味と利用目的"
+          },
+          {
+            "label": "運用",
+            "detail": "権限と連絡・復旧"
+          },
+          {
+            "label": "振返り",
+            "detail": "誤りの理由と次の練習"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day14-q01",
+      "sectionId": "ip26-day14-s1",
+      "category": "ストラテジ",
+      "prompt": "架空の配送業務で転記の誤りを減らしたい。要件検討の出発点は？",
+      "explanation": "業務と困り事を具体化してから手段を選びます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "どの情報を誰がどこへ転記し、何が起きているか。"
+        },
+        {
+          "id": "c2",
+          "text": "最新の流行語を選ぶこと。"
+        },
+        {
+          "id": "c3",
+          "text": "全作業を同時に廃止すること。"
+        },
+        {
+          "id": "c4",
+          "text": "既存の利用者へ一切聞かないこと。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day14-q02",
+      "sectionId": "ip26-day14-s1",
+      "category": "ストラテジ",
+      "prompt": "架空サービスの収益150万円、費用118万円。利益は？",
+      "explanation": "同じ期間と単位の収益・費用を比較します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "150−118＝32",
+          "operator": "difference",
+          "operands": [
+            150,
+            118
+          ],
+          "result": 32,
+          "unit": "万円",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "利益",
+          "expected": 32,
+          "unit": "万円",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day14-q03",
+      "sectionId": "ip26-day14-s1",
+      "category": "ストラテジ",
+      "prompt": "「最大100人が同時に使う」という要件は主に何に関わる？",
+      "explanation": "利用条件に応じた処理能力を検討します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "担当者の名字"
+        },
+        {
+          "id": "c2",
+          "text": "性能や容量などの非機能要件"
+        },
+        {
+          "id": "c3",
+          "text": "画像の著作権者の名称だけ"
+        },
+        {
+          "id": "c4",
+          "text": "販売する商品の種類だけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day14-q04",
+      "sectionId": "ip26-day14-s1",
+      "category": "ストラテジ",
+      "prompt": "既存データを新システムへ移す際の計画に必要なのは？",
+      "explanation": "移行後の正しさと業務継続を考えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "確認前の移行元の消去だけ"
+        },
+        {
+          "id": "c2",
+          "text": "先に成功と報告することだけ"
+        },
+        {
+          "id": "c3",
+          "text": "対応付け、照合、失敗時の戻し方"
+        },
+        {
+          "id": "c4",
+          "text": "利用者への連絡をしないこと"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day14-q05",
+      "sectionId": "ip26-day14-s1",
+      "category": "マネジメント",
+      "prompt": "追加画面の作成を依頼されたが納期が変わらない。まず行うことは？",
+      "explanation": "範囲とスケジュールを調整します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "無条件に全作業を同時終了とする。"
+        },
+        {
+          "id": "c2",
+          "text": "完了済みと偽って記録する。"
+        },
+        {
+          "id": "c3",
+          "text": "利用者のデータを公開する。"
+        },
+        {
+          "id": "c4",
+          "text": "影響と優先順位を確認し、条件を合意する。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day14-q06",
+      "sectionId": "ip26-day14-s1",
+      "category": "マネジメント",
+      "prompt": "障害の復旧後に行う活動として適切なのは？",
+      "explanation": "復旧した事実だけで再発防止が完了したことにはなりません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "原因と再発防止策を確認する。"
+        },
+        {
+          "id": "c2",
+          "text": "ログをすべて捨てる。"
+        },
+        {
+          "id": "c3",
+          "text": "関係者へ何も知らせない。"
+        },
+        {
+          "id": "c4",
+          "text": "同じ問題を放置する。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day14-q07",
+      "sectionId": "ip26-day14-s1",
+      "category": "マネジメント",
+      "prompt": "第三者的な立場から運用記録を評価する活動は？",
+      "explanation": "独立性と証拠に基づく評価です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "日常の受注入力そのもの"
+        },
+        {
+          "id": "c2",
+          "text": "システム監査"
+        },
+        {
+          "id": "c3",
+          "text": "プログラムの変数への代入"
+        },
+        {
+          "id": "c4",
+          "text": "数値データの大文字変換"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day14-q08",
+      "sectionId": "ip26-day14-s1",
+      "category": "マネジメント",
+      "prompt": "30件の確認を3人が均等に分担するという仮定。1人何件ですか。",
+      "explanation": "均等に分けるという設例の条件を使います。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "30÷3＝10",
+          "operator": "quotient",
+          "operands": [
+            30,
+            3
+          ],
+          "result": 10,
+          "unit": "件",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "一人の担当件数",
+          "expected": 10,
+          "unit": "件",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day14-q09",
+      "sectionId": "ip26-day14-s2",
+      "category": "テクノロジ",
+      "prompt": "必要なときにシステムを使える性質は？",
+      "explanation": "機密性・完全性との違いを確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "機密性だけ"
+        },
+        {
+          "id": "c2",
+          "text": "文字コード"
+        },
+        {
+          "id": "c3",
+          "text": "可用性"
+        },
+        {
+          "id": "c4",
+          "text": "表示倍率"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day14-q10",
+      "sectionId": "ip26-day14-s2",
+      "category": "テクノロジ",
+      "prompt": "顧客IDで注文表と顧客表を関連付ける目的は？",
+      "explanation": "識別子により、表の役割とつながりを整理します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべての項目を無関係にする。"
+        },
+        {
+          "id": "c2",
+          "text": "重複した名前だけで必ず特定する。"
+        },
+        {
+          "id": "c3",
+          "text": "全件を同時に消す。"
+        },
+        {
+          "id": "c4",
+          "text": "記録を識別し、情報の関係を保つ。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day14-q11",
+      "sectionId": "ip26-day14-s2",
+      "category": "テクノロジ",
+      "prompt": "画面に鍵の表示があるサイトへ個人情報を入れる前に必要な確認は？",
+      "explanation": "通信の保護だけでは、相手と内容は保証されません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "宛先の正当性、目的と共有する項目"
+        },
+        {
+          "id": "c2",
+          "text": "暗号化されているので全確認を省く。"
+        },
+        {
+          "id": "c3",
+          "text": "表示される文字数だけ"
+        },
+        {
+          "id": "c4",
+          "text": "一度訪れたので今後の確認は不要とする。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day14-q12",
+      "sectionId": "ip26-day14-s2",
+      "category": "テクノロジ",
+      "prompt": "8ビットで区別できる状態の数は？",
+      "explanation": "各ビットの二つの状態を組み合わせます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "2⁸＝256",
+          "operator": "power",
+          "operands": [
+            2,
+            8
+          ],
+          "result": 256,
+          "unit": "通り",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "状態の数",
+          "expected": 256,
+          "unit": "通り",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day14-q13",
+      "sectionId": "ip26-day14-s2",
+      "category": "テクノロジ",
+      "prompt": "ログインできた人でも管理画面を使えないことがある理由は？",
+      "explanation": "本人確認と操作権限を分けます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "パスワードは必ず無効だから。"
+        },
+        {
+          "id": "c2",
+          "text": "認証と、操作を許可する認可が別だから。"
+        },
+        {
+          "id": "c3",
+          "text": "画面の横幅だけで権限が変わるから。"
+        },
+        {
+          "id": "c4",
+          "text": "すべての利用者は同じ権限だから。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day14-q14",
+      "sectionId": "ip26-day14-s2",
+      "category": "テクノロジ",
+      "prompt": "生成AIが自信のある説明を返した。適切な対応は？",
+      "explanation": "出力の流暢さと正確さは別です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "自信の強さだけで採用する。"
+        },
+        {
+          "id": "c2",
+          "text": "出典が実在するか調べない。"
+        },
+        {
+          "id": "c3",
+          "text": "重要な内容を一次資料で確かめ、人が利用を判断する。"
+        },
+        {
+          "id": "c4",
+          "text": "誤りが一度もないと保証する。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day14-q15",
+      "sectionId": "ip26-day14-s2",
+      "category": "テクノロジ",
+      "prompt": "バックアップした記録を守るうえで重要な追加確認は？",
+      "explanation": "復旧の目的に合うかを確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ファイル名の長さだけ"
+        },
+        {
+          "id": "c2",
+          "text": "保存先を誰でも消せること"
+        },
+        {
+          "id": "c3",
+          "text": "暗号鍵を無制限に公開すること"
+        },
+        {
+          "id": "c4",
+          "text": "必要なときに復元できること。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day14-q16",
+      "sectionId": "ip26-day14-s2",
+      "category": "テクノロジ",
+      "prompt": "アプリで正答率80%だったときの解釈は？",
+      "explanation": "収録範囲の練習結果として振り返り、試験の評価方法とは区別します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "この独自演習への回答結果であり、本試験のIRT評価点ではない。"
+        },
+        {
+          "id": "c2",
+          "text": "本試験の評価点が必ず800点である。"
+        },
+        {
+          "id": "c3",
+          "text": "合格確率が必ず80%である。"
+        },
+        {
+          "id": "c4",
+          "text": "すべての実務が許可されたことを示す。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    }
+  ]
+}

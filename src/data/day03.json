@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day03",
+  "day": 3,
+  "title": "経営戦略と業務改善",
+  "category": "ストラテジ",
+  "goals": [
+    "内部と外部を区別し、根拠を添えて整理します。",
+    "現状を測り、改善後にも同じ条件で確認します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day03-s1",
+      "title": "強みと周囲の状況を分ける",
+      "paragraphs": [
+        "SWOT分析は、内部の強み・弱みと、外部の機会・脅威を分けて整理する考え方です。同じ出来事でも、どの会社の立場で見るかによって評価は変わります。単語を埋めるだけでなく、判断の理由を説明します。",
+        "顧客が求めていることを調べ、どの価値を提供するかを考えます。売り手の都合だけで機能を増やしても、利用者の困り事に合うとは限りません。目的と優先順位をはっきりさせます。"
+      ],
+      "keyPoint": "内部と外部を区別し、根拠を添えて整理します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "強みと周囲の状況を分けるの見方",
+        "description": "内部と外部を区別し、根拠を添えて整理します。",
+        "items": [
+          {
+            "label": "内部",
+            "detail": "自社の強み・弱み"
+          },
+          {
+            "label": "外部",
+            "detail": "機会・脅威"
+          },
+          {
+            "label": "戦略",
+            "detail": "価値と優先順位"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day03-s2",
+      "title": "現状の流れを改善する",
+      "paragraphs": [
+        "業務の流れを図にすると、重複作業、待ち時間、引継ぎの抜けを見つけやすくなります。先に手順そのものを見直してから、必要な部分へITを使います。不要な作業をそのまま自動化しないことが大切です。",
+        "PDCAは、計画、実行、確認、改善を繰り返す考え方です。導入して終わりにせず、目的の指標がどう変わったかを確かめます。費用対効果を考えるときは、期間や単位をそろえます。"
+      ],
+      "keyPoint": "現状を測り、改善後にも同じ条件で確認します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "現状の流れを改善するの見方",
+        "description": "現状を測り、改善後にも同じ条件で確認します。",
+        "items": [
+          {
+            "label": "Plan",
+            "detail": "計画する"
+          },
+          {
+            "label": "Do・Check",
+            "detail": "実行し確認する"
+          },
+          {
+            "label": "Act",
+            "detail": "見直す"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day03-q01",
+      "sectionId": "ip26-day03-s1",
+      "category": "ストラテジ",
+      "prompt": "SWOTで、自社に熟練した担当者が多いことは通常どこに分類する？",
+      "explanation": "自社が持つ能力なので内部の要因です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "外部の機会"
+        },
+        {
+          "id": "c2",
+          "text": "外部の脅威"
+        },
+        {
+          "id": "c3",
+          "text": "内部の強み"
+        },
+        {
+          "id": "c4",
+          "text": "市場全体の規模"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day03-q02",
+      "sectionId": "ip26-day03-s1",
+      "category": "ストラテジ",
+      "prompt": "SWOTで、新しい競合店の進出は通常どの要因？",
+      "explanation": "会社の外からの影響として整理します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "内部の強み"
+        },
+        {
+          "id": "c2",
+          "text": "内部の弱み"
+        },
+        {
+          "id": "c3",
+          "text": "自社の資産残高"
+        },
+        {
+          "id": "c4",
+          "text": "外部の脅威"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day03-q03",
+      "sectionId": "ip26-day03-s1",
+      "category": "ストラテジ",
+      "prompt": "新サービスの企画で優先する確認は？",
+      "explanation": "顧客に提供する価値から必要な機能を選びます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "利用者が解決したい課題"
+        },
+        {
+          "id": "c2",
+          "text": "担当者が使いたい技術だけ"
+        },
+        {
+          "id": "c3",
+          "text": "機能の数だけ"
+        },
+        {
+          "id": "c4",
+          "text": "宣伝の文字数だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day03-q04",
+      "sectionId": "ip26-day03-s1",
+      "category": "ストラテジ",
+      "prompt": "自社の弱みと外部環境の区別として適切なのは？",
+      "explanation": "観察している対象の内外を分けます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "競合の新商品を自社の内部能力とする。"
+        },
+        {
+          "id": "c2",
+          "text": "社内の入力ミスが多いことは内部要因として整理する。"
+        },
+        {
+          "id": "c3",
+          "text": "法制度の変更を社内設備とする。"
+        },
+        {
+          "id": "c4",
+          "text": "自社の人員不足を外部市場そのものとする。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day03-q05",
+      "sectionId": "ip26-day03-s2",
+      "category": "ストラテジ",
+      "prompt": "同じ注文を三つの表へ手入力している。改善の検討として適切なのは？",
+      "explanation": "流れを把握したうえで、作業と仕組みを改善します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "三つの入力を無条件でさらに増やす。"
+        },
+        {
+          "id": "c2",
+          "text": "関係者に知らせずすべて削除する。"
+        },
+        {
+          "id": "c3",
+          "text": "必要な情報と利用先を確認し、重複記録を見直す。"
+        },
+        {
+          "id": "c4",
+          "text": "入力担当だけに注意を求めて終える。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day03-q06",
+      "sectionId": "ip26-day03-s2",
+      "category": "ストラテジ",
+      "prompt": "PDCAのCheckに相当する行動は？",
+      "explanation": "確認の結果を次の改善へつなげます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "未着手のまま購入する。"
+        },
+        {
+          "id": "c2",
+          "text": "計画を立てる前に結果を決める。"
+        },
+        {
+          "id": "c3",
+          "text": "結果を見ずに同じ手順を続ける。"
+        },
+        {
+          "id": "c4",
+          "text": "実施結果を計画や指標と比べる。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day03-q07",
+      "sectionId": "ip26-day03-s2",
+      "category": "ストラテジ",
+      "prompt": "練習用の見積り。導入費12万円、毎月の削減費2万円。追加費用なしと仮定し、回収に必要な月数は？",
+      "explanation": "単純な仮定で初期費用を月間削減額で割ります。実案件の利益を保証しません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "12÷2＝6",
+          "operator": "quotient",
+          "operands": [
+            12,
+            2
+          ],
+          "result": 6,
+          "unit": "か月",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "回収月数",
+          "expected": 6,
+          "unit": "か月",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day03-q08",
+      "sectionId": "ip26-day03-s2",
+      "category": "ストラテジ",
+      "prompt": "改善前後で処理時間を比較するために必要なことは？",
+      "explanation": "比較条件が違うと、効果を正しく読めません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "対象と測り方、件数の条件をそろえる。"
+        },
+        {
+          "id": "c2",
+          "text": "都合の良い一件だけ選ぶ。"
+        },
+        {
+          "id": "c3",
+          "text": "改善後だけ違う作業を測る。"
+        },
+        {
+          "id": "c4",
+          "text": "作業内容を一切記録しない。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    }
+  ]
+}

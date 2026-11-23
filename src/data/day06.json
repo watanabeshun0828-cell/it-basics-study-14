@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day06",
+  "day": 6,
+  "title": "プロジェクトと品質",
+  "category": "マネジメント",
+  "goals": [
+    "作業の分解と、前後関係を合わせて確認します。",
+    "リスクは事前、起きた問題は対応と結果を管理します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day06-s1",
+      "title": "仕事を分けて見通す",
+      "paragraphs": [
+        "プロジェクトは、目的と期限を持って進める一時的な活動です。WBSは成果物や作業を分けて、抜けを見つけやすくする構造です。担当者、期間、依存する作業を確認します。",
+        "同時にできる作業と、前の作業が終わるまで始められない作業は違います。全作業の日数を単純に足すのではなく、つながりから全体の期間を考えます。"
+      ],
+      "keyPoint": "作業の分解と、前後関係を合わせて確認します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "仕事を分けて見通すの見方",
+        "description": "作業の分解と、前後関係を合わせて確認します。",
+        "items": [
+          {
+            "label": "成果物",
+            "detail": "何を作るか"
+          },
+          {
+            "label": "作業",
+            "detail": "誰が進めるか"
+          },
+          {
+            "label": "依存関係",
+            "detail": "何を待つか"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day06-s2",
+      "title": "リスクと品質を管理する",
+      "paragraphs": [
+        "リスクは、目標に影響する不確かな出来事です。発生しやすさと影響を考え、予防や代替案を準備します。発生した問題は、対応者と期日を決めて管理します。",
+        "品質は、合意した条件に合っているかという観点でも確認します。誤りの件数は対象件数と一緒に読みます。件数が同じでも、処理する総数が違えば割合は変わります。"
+      ],
+      "keyPoint": "リスクは事前、起きた問題は対応と結果を管理します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "リスクと品質を管理するの見方",
+        "description": "リスクは事前、起きた問題は対応と結果を管理します。",
+        "items": [
+          {
+            "label": "予測",
+            "detail": "起こり得ること"
+          },
+          {
+            "label": "対策",
+            "detail": "予防と代替案"
+          },
+          {
+            "label": "確認",
+            "detail": "結果と品質"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day06-q01",
+      "sectionId": "ip26-day06-s1",
+      "category": "マネジメント",
+      "prompt": "WBSを作成する主な目的は？",
+      "explanation": "範囲や責任分担の見通しに使います。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "作業や成果物を分解し、範囲と抜けを確認する。"
+        },
+        {
+          "id": "c2",
+          "text": "パスワードを暗号化する。"
+        },
+        {
+          "id": "c3",
+          "text": "全員の予定を秘密にする。"
+        },
+        {
+          "id": "c4",
+          "text": "画像の色数を減らす。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day06-q02",
+      "sectionId": "ip26-day06-s1",
+      "category": "マネジメント",
+      "prompt": "作業Bが作業Aの完了を待つ。この関係は？",
+      "explanation": "順序や全体日程へ影響します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "画像の解像度"
+        },
+        {
+          "id": "c2",
+          "text": "作業の依存関係"
+        },
+        {
+          "id": "c3",
+          "text": "利益率"
+        },
+        {
+          "id": "c4",
+          "text": "アクセス権の継承だけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day06-q03",
+      "sectionId": "ip26-day06-s1",
+      "category": "マネジメント",
+      "prompt": "Aの作業に2日、その完了後にBが3日、その後Cが1日。並行作業なし。全体は？",
+      "explanation": "直列の前後関係なので所要日数を足します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "2＋3＋1＝6",
+          "operator": "sum",
+          "operands": [
+            2,
+            3,
+            1
+          ],
+          "result": 6,
+          "unit": "日",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "全体の期間",
+          "expected": 6,
+          "unit": "日",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day06-q04",
+      "sectionId": "ip26-day06-s1",
+      "category": "マネジメント",
+      "prompt": "進捗が遅れているとき、最初に確認すべきものは？",
+      "explanation": "事実を整理して対策や調整を考えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "報告資料の色だけ"
+        },
+        {
+          "id": "c2",
+          "text": "担当者の好みだけ"
+        },
+        {
+          "id": "c3",
+          "text": "残作業、原因、後続への影響"
+        },
+        {
+          "id": "c4",
+          "text": "完了していない作業を記録から消すこと"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day06-q05",
+      "sectionId": "ip26-day06-s2",
+      "category": "マネジメント",
+      "prompt": "担当者が休む可能性に備えて手順を共有しておく行為は？",
+      "explanation": "不確かな出来事への備えです。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "事故発生後の損失確定だけ"
+        },
+        {
+          "id": "c2",
+          "text": "品質確認の廃止"
+        },
+        {
+          "id": "c3",
+          "text": "作業内容の隠蔽"
+        },
+        {
+          "id": "c4",
+          "text": "リスクへの事前対策"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day06-q06",
+      "sectionId": "ip26-day06-s2",
+      "category": "マネジメント",
+      "prompt": "問題管理表に記録する内容として適切なのは？",
+      "explanation": "追跡できる情報をそろえます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "内容、影響、担当、対応期日と状況"
+        },
+        {
+          "id": "c2",
+          "text": "担当者の趣味だけ"
+        },
+        {
+          "id": "c3",
+          "text": "解決したことにする空欄だけ"
+        },
+        {
+          "id": "c4",
+          "text": "原因を調べないという約束だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day06-q07",
+      "sectionId": "ip26-day06-s2",
+      "category": "マネジメント",
+      "prompt": "架空データ200件中、誤りが5件。誤りの割合は？",
+      "explanation": "分子と分母の対象期間をそろえます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "5÷200×100＝2.5",
+          "operator": "product",
+          "operands": [
+            0.025,
+            100
+          ],
+          "result": 2.5,
+          "unit": "%",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "誤りの割合",
+          "expected": 2.5,
+          "unit": "%",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day06-q08",
+      "sectionId": "ip26-day06-s2",
+      "category": "マネジメント",
+      "prompt": "品質の評価として適切なのは？",
+      "explanation": "用途や合意条件に対して確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "見た目の豪華さだけで決める。"
+        },
+        {
+          "id": "c2",
+          "text": "要件に合うことを確認し、改善点を記録する。"
+        },
+        {
+          "id": "c3",
+          "text": "利用者の条件を一切見ない。"
+        },
+        {
+          "id": "c4",
+          "text": "件数が多ければ誤りは調べない。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    }
+  ]
+}

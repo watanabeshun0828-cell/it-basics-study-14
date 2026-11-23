@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day10",
+  "day": 10,
+  "title": "データベースと整合性",
+  "category": "テクノロジ",
+  "goals": [
+    "一件を識別するキーと、表同士の関係を考えます。",
+    "条件に合う行と、処理を完了する単位を確認します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65",
+    "postgres-tables"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day10-s1",
+      "title": "表とキーで関係を表す",
+      "paragraphs": [
+        "関係データベースは、行と列の表を使ってデータを整理します。行は一件の記録、列は名前や金額などの項目です。主キーは、表の行を一意に識別するために選ぶ項目です。重複しないという条件を確認します。",
+        "別の表を識別子で結び付けると、同じ情報の重複を減らせます。顧客の住所を注文のたびに何度も手修正する方法では、変更漏れが起きやすくなります。どの表に何を一度だけ持つかを考えます。"
+      ],
+      "keyPoint": "一件を識別するキーと、表同士の関係を考えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables"
+      ],
+      "diagram": {
+        "title": "表とキーで関係を表すの見方",
+        "description": "一件を識別するキーと、表同士の関係を考えます。",
+        "items": [
+          {
+            "label": "行",
+            "detail": "一件の記録"
+          },
+          {
+            "label": "列",
+            "detail": "項目と型"
+          },
+          {
+            "label": "キー",
+            "detail": "一意に識別"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day10-s2",
+      "title": "検索と更新を分けて読む",
+      "paragraphs": [
+        "SQLはデータベースを扱うための言語です。SELECTは取得する列、FROMは対象の表、WHEREは絞り込む条件を示します。取得や更新の権限は、必要な範囲へ限定します。",
+        "トランザクションは、一まとまりとして扱う処理です。振替の一方だけが記録されるような不整合を避けるため、全体を完了するか取り消すかを管理します。バックアップや同時更新時の制御も整合性に関わります。"
+      ],
+      "keyPoint": "条件に合う行と、処理を完了する単位を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables"
+      ],
+      "diagram": {
+        "title": "検索と更新を分けて読むの見方",
+        "description": "条件に合う行と、処理を完了する単位を確認します。",
+        "items": [
+          {
+            "label": "取得",
+            "detail": "列と行を指定"
+          },
+          {
+            "label": "更新",
+            "detail": "必要な権限で行う"
+          },
+          {
+            "label": "整合性",
+            "detail": "まとまりを保つ"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day10-q01",
+      "sectionId": "ip26-day10-s1",
+      "category": "テクノロジ",
+      "prompt": "顧客表の一行を一意に識別する項目の候補として最も適切なのは？",
+      "explanation": "一意に識別できる条件を満たすキーを選びます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "重複することがある名字だけ"
+        },
+        {
+          "id": "c2",
+          "text": "常に同じ国名だけ"
+        },
+        {
+          "id": "c3",
+          "text": "空欄の担当メモだけ"
+        },
+        {
+          "id": "c4",
+          "text": "重複しない顧客ID"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day10-q02",
+      "sectionId": "ip26-day10-s1",
+      "category": "テクノロジ",
+      "prompt": "関係データベースの列が表すものは？",
+      "explanation": "行は記録、列は項目という違いです。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "各記録が持つ項目と値の型"
+        },
+        {
+          "id": "c2",
+          "text": "必ず一件の顧客そのもの"
+        },
+        {
+          "id": "c3",
+          "text": "バックアップの回数だけ"
+        },
+        {
+          "id": "c4",
+          "text": "通信の経路だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day10-q03",
+      "sectionId": "ip26-day10-s1",
+      "category": "テクノロジ",
+      "prompt": "住所を顧客表で管理し注文表は顧客IDを持つ利点は？",
+      "explanation": "表の役割を分け、識別子で関連付けます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "注文を一切保存できなくなる。"
+        },
+        {
+          "id": "c2",
+          "text": "同じ顧客情報の重複や変更漏れを減らせる。"
+        },
+        {
+          "id": "c3",
+          "text": "必ず顧客が一人に限定される。"
+        },
+        {
+          "id": "c4",
+          "text": "住所を公開する必要がある。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day10-q04",
+      "sectionId": "ip26-day10-s1",
+      "category": "テクノロジ",
+      "prompt": "主キーとして不適切な条件は？",
+      "explanation": "主キーの一意性を保てません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "各行を区別できる。"
+        },
+        {
+          "id": "c2",
+          "text": "値を安定して管理できる。"
+        },
+        {
+          "id": "c3",
+          "text": "同じ値が複数行で重複する。"
+        },
+        {
+          "id": "c4",
+          "text": "識別に使う条件が明確である。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day10-q05",
+      "sectionId": "ip26-day10-s2",
+      "category": "テクノロジ",
+      "prompt": "WHERE amount >= 1000 が示すものは？",
+      "explanation": "WHEREは条件で対象行を絞ります。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "code": "SELECT order_id FROM orders WHERE amount >= 1000",
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "全項目を必ず削除する命令"
+        },
+        {
+          "id": "c2",
+          "text": "列名を1000へ変える命令"
+        },
+        {
+          "id": "c3",
+          "text": "行数を常に1000にする命令"
+        },
+        {
+          "id": "c4",
+          "text": "amountが1000以上の行を対象にする条件"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day10-q06",
+      "sectionId": "ip26-day10-s2",
+      "category": "テクノロジ",
+      "prompt": "二つの関連する更新を一まとまりで完了・取消しする仕組みは？",
+      "explanation": "一方だけが反映される不整合を避けます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "トランザクション"
+        },
+        {
+          "id": "c2",
+          "text": "画像のトリミング"
+        },
+        {
+          "id": "c3",
+          "text": "HTMLの見出し"
+        },
+        {
+          "id": "c4",
+          "text": "文字列の大文字変換"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day10-q07",
+      "sectionId": "ip26-day10-s2",
+      "category": "テクノロジ",
+      "prompt": "集計だけを行う担当へ与える権限の考え方は？",
+      "explanation": "必要な操作へ絞る最小権限の考え方です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "全表の削除権限を必ず付ける。"
+        },
+        {
+          "id": "c2",
+          "text": "必要な表の参照を基本に、更新権限は必要性を確認する。"
+        },
+        {
+          "id": "c3",
+          "text": "他人の認証情報を共用する。"
+        },
+        {
+          "id": "c4",
+          "text": "権限の記録を一切残さない。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day10-q08",
+      "sectionId": "ip26-day10-s2",
+      "category": "テクノロジ",
+      "prompt": "架空の注文金額は500、1200、800、1600円。1000円以上の行を抽出したときの合計は？",
+      "explanation": "条件に合う行だけを合計し、全件と区別します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "postgres-tables",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "1,200＋1,600＝2,800",
+          "operator": "sum",
+          "operands": [
+            1200,
+            1600
+          ],
+          "result": 2800,
+          "unit": "円",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "抽出後の合計",
+          "expected": 2800,
+          "unit": "円",
+          "calculationIndex": 0
+        }
+      ]
+    }
+  ]
+}

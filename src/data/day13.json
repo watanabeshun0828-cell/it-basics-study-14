@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day13",
+  "day": 13,
+  "title": "AI・データ活用と場面判断",
+  "category": "テクノロジ",
+  "goals": [
+    "対象・単位・欠損を確かめ、結果の意味を考えます。",
+    "流暢さと正しさを区別し、重要な判断には人が関わります。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65",
+    "ipa-sme-security"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day13-s1",
+      "title": "データから考える前提",
+      "paragraphs": [
+        "データは集め方や対象範囲によって偏る場合があります。欠損、重複、単位の違いを確認し、何を表す一件なのかをそろえてから集計します。相関があることだけで、原因と結果の関係が証明されるわけではありません。",
+        "平均は全体の傾向を見る一つの方法ですが、一部の大きな値に影響されます。中央値は並べた中央の値です。分布や例外も見て、目的に合った指標を選びます。"
+      ],
+      "keyPoint": "対象・単位・欠損を確かめ、結果の意味を考えます。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "データから考える前提の見方",
+        "description": "対象・単位・欠損を確かめ、結果の意味を考えます。",
+        "items": [
+          {
+            "label": "収集",
+            "detail": "対象と目的"
+          },
+          {
+            "label": "整備",
+            "detail": "重複・欠損・単位"
+          },
+          {
+            "label": "解釈",
+            "detail": "分布と関係"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day13-s2",
+      "title": "生成AIの出力を確かめる",
+      "paragraphs": [
+        "生成AIは、入力に応じて文章などを生成します。自然な文章で返っても、事実に合わない内容や根拠のない説明が含まれる場合があります。重要な内容は一次資料と照合し、人が利用の判断をします。",
+        "仕事の情報を入力する前に、組織のルールとサービスの情報の扱いを確認します。実物の顧客情報ではなく、必要な特徴だけを持つ架空データで試す方法もあります。結果の誤りや偏りと、人が確認した範囲を記録しましょう。"
+      ],
+      "keyPoint": "流暢さと正しさを区別し、重要な判断には人が関わります。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security"
+      ],
+      "diagram": {
+        "title": "生成AIの出力を確かめるの見方",
+        "description": "流暢さと正しさを区別し、重要な判断には人が関わります。",
+        "items": [
+          {
+            "label": "入力",
+            "detail": "目的と利用条件"
+          },
+          {
+            "label": "出力",
+            "detail": "誤りや偏りを確認"
+          },
+          {
+            "label": "利用",
+            "detail": "人が根拠を照合"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day13-q01",
+      "sectionId": "ip26-day13-s1",
+      "category": "テクノロジ",
+      "prompt": "二つの売上表を結合する前に確認することは？",
+      "explanation": "データの意味と範囲をそろえます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "表の見出しの色だけ"
+        },
+        {
+          "id": "c2",
+          "text": "一行の意味、単位、期間、識別子の重複"
+        },
+        {
+          "id": "c3",
+          "text": "大きい数字だけを残すこと"
+        },
+        {
+          "id": "c4",
+          "text": "欠損を無条件ですべて0にすること"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day13-q02",
+      "sectionId": "ip26-day13-s1",
+      "category": "テクノロジ",
+      "prompt": "平均だけを見る際の注意点は？",
+      "explanation": "代表値と全体のばらつきを分けて考えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ず全員の値と等しい。"
+        },
+        {
+          "id": "c2",
+          "text": "件数に一切関係しない。"
+        },
+        {
+          "id": "c3",
+          "text": "一部の大きな値に影響されることがある。"
+        },
+        {
+          "id": "c4",
+          "text": "分布を確認する必要は決してない。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day13-q03",
+      "sectionId": "ip26-day13-s1",
+      "category": "テクノロジ",
+      "prompt": "架空の処理件数は2、4、6件。平均を求めてください。",
+      "explanation": "合計を対象の件数で割ります。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "（2＋4＋6）÷3＝4",
+          "operator": "quotient",
+          "operands": [
+            12,
+            3
+          ],
+          "result": 4,
+          "unit": "件",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "平均",
+          "expected": 4,
+          "unit": "件",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day13-q04",
+      "sectionId": "ip26-day13-s1",
+      "category": "テクノロジ",
+      "prompt": "広告量と売上が一緒に増えていた。適切な判断は？",
+      "explanation": "関係が見えることと、原因を特定したことは別です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "広告だけが唯一の原因と断言する。"
+        },
+        {
+          "id": "c2",
+          "text": "必ず偶然なので調査をやめる。"
+        },
+        {
+          "id": "c3",
+          "text": "記録を都合よく変える。"
+        },
+        {
+          "id": "c4",
+          "text": "他の要因も調べ、相関だけで因果と決めない。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day13-q05",
+      "sectionId": "ip26-day13-s2",
+      "category": "テクノロジ",
+      "prompt": "生成AIが示した制度の説明を仕事で使う前の対応は？",
+      "explanation": "実在する根拠と内容を人が確かめます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "実際の一次資料と対象時点を照合する。"
+        },
+        {
+          "id": "c2",
+          "text": "文章が自然なら全て正しいとする。"
+        },
+        {
+          "id": "c3",
+          "text": "出典名があれば開かなくてよい。"
+        },
+        {
+          "id": "c4",
+          "text": "同じ質問を一回しただけで監修済みにする。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day13-q06",
+      "sectionId": "ip26-day13-s2",
+      "category": "テクノロジ",
+      "prompt": "顧客情報の分類を試す初期データとして適切なのは？",
+      "explanation": "実物の機密・個人情報を使う必要性から確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "未承認で取り出した顧客の全記録"
+        },
+        {
+          "id": "c2",
+          "text": "必要な特徴を再現した架空データ"
+        },
+        {
+          "id": "c3",
+          "text": "個人のSNSへ送った生の名簿"
+        },
+        {
+          "id": "c4",
+          "text": "機密を混ぜた実データを無制限公開したもの"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day13-q07",
+      "sectionId": "ip26-day13-s2",
+      "category": "テクノロジ",
+      "prompt": "AIの回答の偏りを確認する理由は？",
+      "explanation": "誤りと偏りの両面を考えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "出力の文字数だけを固定するため。"
+        },
+        {
+          "id": "c2",
+          "text": "人の確認をすべてなくすため。"
+        },
+        {
+          "id": "c3",
+          "text": "特定の条件や人に不適切な結果が出ていないか調べるため。"
+        },
+        {
+          "id": "c4",
+          "text": "結果の根拠を隠すため。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day13-q08",
+      "sectionId": "ip26-day13-s2",
+      "category": "テクノロジ",
+      "prompt": "AI利用の検証記録として適切なのは？",
+      "explanation": "実際に確認したことを追える形で残します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "成功したという一言だけ"
+        },
+        {
+          "id": "c2",
+          "text": "実施していない専門家監修の記載"
+        },
+        {
+          "id": "c3",
+          "text": "不都合な例を消した結果だけ"
+        },
+        {
+          "id": "c4",
+          "text": "入力条件、照合した根拠、確認範囲と残る疑問"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day02",
+  "day": 2,
+  "title": "情報・契約・ルールの基本",
+  "category": "ストラテジ",
+  "goals": [
+    "識別可能性と目的を確認し、必要な情報だけを扱います。",
+    "使える範囲と合意内容を確かめてから共有・変更します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65",
+    "ppc-personal"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day02-s1",
+      "title": "個人情報と利用目的",
+      "paragraphs": [
+        "個人情報は、生存する個人を識別できる情報などです。氏名がなくても、他の情報と容易に照合して特定の人が分かる場合があります。単に名前を消しただけで、自由に公開できるとは考えません。",
+        "名簿を扱う仕事では、必要な項目、目的、閲覧する人、保管する期間を確認します。実際の法的判断が必要な場合は、このアプリの一般説明だけで判断せず、担当部門や専門家に確認します。"
+      ],
+      "keyPoint": "識別可能性と目的を確認し、必要な情報だけを扱います。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ppc-personal"
+      ],
+      "diagram": {
+        "title": "個人情報と利用目的の見方",
+        "description": "識別可能性と目的を確認し、必要な情報だけを扱います。",
+        "items": [
+          {
+            "label": "目的",
+            "detail": "何に使うか"
+          },
+          {
+            "label": "項目",
+            "detail": "何が必要か"
+          },
+          {
+            "label": "権限",
+            "detail": "誰が扱うか"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day02-s2",
+      "title": "契約と情報の持ち出し",
+      "paragraphs": [
+        "契約では、作業の範囲、成果物、納期、確認の方法などを合意します。口頭の思い込みだけで進めると、何をもって完了とするかが食い違います。変更が生じたら、範囲や期日への影響を確認します。",
+        "会社の機密や他者の制作物には、利用条件や管理のルールがあります。インターネットで見られることと、自由に再配布できることは同じではありません。試験範囲の法令名も改訂があるため、現行シラバスと照合します。"
+      ],
+      "keyPoint": "使える範囲と合意内容を確かめてから共有・変更します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "契約と情報の持ち出しの見方",
+        "description": "使える範囲と合意内容を確かめてから共有・変更します。",
+        "items": [
+          {
+            "label": "範囲",
+            "detail": "作るものを明確に"
+          },
+          {
+            "label": "条件",
+            "detail": "利用・共有条件を確認"
+          },
+          {
+            "label": "変更",
+            "detail": "影響を合意する"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day02-q01",
+      "sectionId": "ip26-day02-s1",
+      "category": "ストラテジ",
+      "prompt": "氏名を削除した名簿に珍しい役職と異動日が残っている。適切な考え方は？",
+      "explanation": "名前以外の情報の組合せにも識別可能性があります。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ppc-personal",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "氏名がなければ必ず匿名である。"
+        },
+        {
+          "id": "c2",
+          "text": "役職は個人に関係しない。"
+        },
+        {
+          "id": "c3",
+          "text": "他の情報との照合で個人を識別できる可能性を確認する。"
+        },
+        {
+          "id": "c4",
+          "text": "表の形式なら無条件で公開できる。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day02-q02",
+      "sectionId": "ip26-day02-s1",
+      "category": "ストラテジ",
+      "prompt": "請求先情報を集計する際、目的に不要な生年月日が含まれていた。まず行うことは？",
+      "explanation": "目的に合う項目へ絞ることが基本です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ppc-personal",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "後で便利なので常に保存する。"
+        },
+        {
+          "id": "c2",
+          "text": "全員にメールで知らせる。"
+        },
+        {
+          "id": "c3",
+          "text": "別の名簿に無断で追加する。"
+        },
+        {
+          "id": "c4",
+          "text": "必要性を確認し、不要なら集計から外す。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day02-q03",
+      "sectionId": "ip26-day02-s1",
+      "category": "ストラテジ",
+      "prompt": "個人情報の定義で対象となる人について適切なのは？",
+      "explanation": "定義と、公開・非公開の別だけを混同しないようにします。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ppc-personal",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "生存する個人に関する情報を基本として確認する。"
+        },
+        {
+          "id": "c2",
+          "text": "会社名をすべて個人情報と呼ぶ。"
+        },
+        {
+          "id": "c3",
+          "text": "氏名という文字列だけに限られる。"
+        },
+        {
+          "id": "c4",
+          "text": "公開された情報は一切含まれない。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day02-q04",
+      "sectionId": "ip26-day02-s1",
+      "category": "ストラテジ",
+      "prompt": "取引先の名簿を新しい外部サービスへ移す前の対応は？",
+      "explanation": "サービスへの移転は情報の扱いを変えるため、許可と条件を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ppc-personal",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "無料なら確認しなくてよい。"
+        },
+        {
+          "id": "c2",
+          "text": "契約・社内ルール・目的に照らして利用可否を確認する。"
+        },
+        {
+          "id": "c3",
+          "text": "氏名だけ残せば確認不要。"
+        },
+        {
+          "id": "c4",
+          "text": "担当者個人の判断だけで移す。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day02-q05",
+      "sectionId": "ip26-day02-s2",
+      "category": "ストラテジ",
+      "prompt": "画面追加の依頼で納期が同じまま作業量が増えた。適切な対応は？",
+      "explanation": "範囲変更の影響を関係者と共有して決めます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "黙って元の成果物を削る。"
+        },
+        {
+          "id": "c2",
+          "text": "納期だけ後から勝手に変更する。"
+        },
+        {
+          "id": "c3",
+          "text": "変更内容と納期・費用への影響を整理して合意する。"
+        },
+        {
+          "id": "c4",
+          "text": "元の合意内容を記録しない。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day02-q06",
+      "sectionId": "ip26-day02-s2",
+      "category": "ストラテジ",
+      "prompt": "Webで見つけたイラストを納品資料に使う前に確認するものは？",
+      "explanation": "閲覧できることは、無制限な利用の許可を意味しません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "画像の色だけ"
+        },
+        {
+          "id": "c2",
+          "text": "自分が気に入ったかだけ"
+        },
+        {
+          "id": "c3",
+          "text": "検索結果の順位だけ"
+        },
+        {
+          "id": "c4",
+          "text": "権利者と利用条件、許諾の範囲"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day02-q07",
+      "sectionId": "ip26-day02-s2",
+      "category": "ストラテジ",
+      "prompt": "納品時の認識違いを減らすために事前に決めることは？",
+      "explanation": "何を確認すれば完了かを合意します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "成果物の条件と確認・受入れの方法"
+        },
+        {
+          "id": "c2",
+          "text": "作業者の気分だけ"
+        },
+        {
+          "id": "c3",
+          "text": "納品後に初めて要望を聞くこと"
+        },
+        {
+          "id": "c4",
+          "text": "成果物の名前を伏せておくこと"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day02-q08",
+      "sectionId": "ip26-day02-s2",
+      "category": "ストラテジ",
+      "prompt": "シラバスVer.6.5の法令名を確認するときの考え方は？",
+      "explanation": "6.5では中小受託取引適正化法への更新があります。ここでは個別案件の適法性は判断しません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "以前の名称だけを永続的に使う。"
+        },
+        {
+          "id": "c2",
+          "text": "改訂履歴を確認し、現在掲載の用語を使う。"
+        },
+        {
+          "id": "c3",
+          "text": "法令名は試験ごとに自分で作る。"
+        },
+        {
+          "id": "c4",
+          "text": "古い問題集の表紙だけで判断する。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    }
+  ]
+}

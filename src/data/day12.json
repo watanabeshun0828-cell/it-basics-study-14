@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day12",
+  "day": 12,
+  "title": "セキュリティと日常の判断",
+  "category": "テクノロジ",
+  "goals": [
+    "誰かを確かめることと、できる操作を決めることは別です。",
+    "不審な連絡は別の経路で確認し、事故は早く連絡します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65",
+    "ipa-sme-security"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day12-s1",
+      "title": "守る性質とアクセスを分ける",
+      "paragraphs": [
+        "機密性は許された人だけが情報を扱えること、完全性は情報が正しく保たれること、可用性は必要なときに使えることです。一つだけ良ければ十分とは限りません。仕事の目的とリスクに合わせて保護します。",
+        "認証は誰であるかを確かめ、認可は何をしてよいかを決めます。多要素認証は、知っているもの、持っているもの、本人の特徴など異なる種類の要素を組み合わせます。パスワードを二回入力することとは違います。"
+      ],
+      "keyPoint": "誰かを確かめることと、できる操作を決めることは別です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security"
+      ],
+      "diagram": {
+        "title": "守る性質とアクセスを分けるの見方",
+        "description": "誰かを確かめることと、できる操作を決めることは別です。",
+        "items": [
+          {
+            "label": "認証",
+            "detail": "誰であるか"
+          },
+          {
+            "label": "認可",
+            "detail": "何をしてよいか"
+          },
+          {
+            "label": "記録",
+            "detail": "いつ何をしたか"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day12-s2",
+      "title": "不審な連絡と事故へ備える",
+      "paragraphs": [
+        "フィッシングは、偽のメールやサイトなどで情報をだまし取る手口です。表示名だけで信用せず、通常の連絡経路で確認します。不審な添付やリンクを開いた場合は、隠さず決めた窓口へ知らせます。",
+        "マルウェア対策や更新に加え、必要な権限への限定、バックアップと復旧確認も組み合わせます。暗号化は情報の内容を保護する手段ですが、共有先の設定や機器の管理も必要です。"
+      ],
+      "keyPoint": "不審な連絡は別の経路で確認し、事故は早く連絡します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security"
+      ],
+      "diagram": {
+        "title": "不審な連絡と事故へ備えるの見方",
+        "description": "不審な連絡は別の経路で確認し、事故は早く連絡します。",
+        "items": [
+          {
+            "label": "予防",
+            "detail": "更新と権限"
+          },
+          {
+            "label": "確認",
+            "detail": "正規の連絡経路"
+          },
+          {
+            "label": "対応",
+            "detail": "報告と復旧"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day12-q01",
+      "sectionId": "ip26-day12-s1",
+      "category": "テクノロジ",
+      "prompt": "機密性に直接対応する対策は？",
+      "explanation": "情報へアクセスできる人を制御します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "文字を常に大きくすることだけ"
+        },
+        {
+          "id": "c2",
+          "text": "閲覧を許可された人へ限定する。"
+        },
+        {
+          "id": "c3",
+          "text": "ページ数を増やすことだけ"
+        },
+        {
+          "id": "c4",
+          "text": "ファイル名を長くすることだけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day12-q02",
+      "sectionId": "ip26-day12-s1",
+      "category": "テクノロジ",
+      "prompt": "完全性の考え方に合うものは？",
+      "explanation": "正しさや整合した状態を保つ性質です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必要時に使えなくする。"
+        },
+        {
+          "id": "c2",
+          "text": "必ず全員へ公開する。"
+        },
+        {
+          "id": "c3",
+          "text": "許可のない改変や破損を防ぐ。"
+        },
+        {
+          "id": "c4",
+          "text": "バックアップをなくす。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day12-q03",
+      "sectionId": "ip26-day12-s1",
+      "category": "テクノロジ",
+      "prompt": "認証と認可の対応として正しいのは？",
+      "explanation": "ログインできても、管理操作まで許可されるとは限りません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "両方とも画像圧縮のこと。"
+        },
+        {
+          "id": "c2",
+          "text": "操作の許可が認証、本人確認が認可。"
+        },
+        {
+          "id": "c3",
+          "text": "認証すれば全操作を許可すべき。"
+        },
+        {
+          "id": "c4",
+          "text": "本人確認が認証、操作の許可が認可。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day12-q04",
+      "sectionId": "ip26-day12-s1",
+      "category": "テクノロジ",
+      "prompt": "多要素認証に合う組合せは？",
+      "explanation": "異なる種類の要素を組み合わせます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "パスワードと、登録した機器による確認。"
+        },
+        {
+          "id": "c2",
+          "text": "同じパスワードを二回入力する。"
+        },
+        {
+          "id": "c3",
+          "text": "秘密の文字列を二種類入力するだけ。"
+        },
+        {
+          "id": "c4",
+          "text": "ユーザー名の字体を変える。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day12-q05",
+      "sectionId": "ip26-day12-s2",
+      "category": "テクノロジ",
+      "prompt": "社長名で届いた送金指示メールに普段と違う内容がある。対応は？",
+      "explanation": "偽装の可能性があるため、信頼できる別経路を使います。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "メールの表示名だけで実行する。"
+        },
+        {
+          "id": "c2",
+          "text": "既知の電話番号など別の経路で本人へ確認する。"
+        },
+        {
+          "id": "c3",
+          "text": "添付の連絡先だけを信じる。"
+        },
+        {
+          "id": "c4",
+          "text": "誰にも知らせず急いで送る。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day12-q06",
+      "sectionId": "ip26-day12-s2",
+      "category": "テクノロジ",
+      "prompt": "不審な添付を開いてしまった。適切な行動は？",
+      "explanation": "早い報告が影響の把握と対応に役立ちます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "失敗を隠してログを消す。"
+        },
+        {
+          "id": "c2",
+          "text": "全員に同じ添付を転送する。"
+        },
+        {
+          "id": "c3",
+          "text": "組織の手順に従って速やかに窓口へ知らせる。"
+        },
+        {
+          "id": "c4",
+          "text": "自己判断で証拠をすべて消す。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day12-q07",
+      "sectionId": "ip26-day12-s2",
+      "category": "テクノロジ",
+      "prompt": "共有資料への権限を決めるときの原則は？",
+      "explanation": "最小権限と定期的な見直しを組み合わせます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "全員を管理者にする。"
+        },
+        {
+          "id": "c2",
+          "text": "退職した人も同じ権限を保つ。"
+        },
+        {
+          "id": "c3",
+          "text": "外部リンクを無期限で無制限にする。"
+        },
+        {
+          "id": "c4",
+          "text": "仕事に必要な操作・範囲へ絞る。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day12-q08",
+      "sectionId": "ip26-day12-s2",
+      "category": "テクノロジ",
+      "prompt": "暗号化したファイルの共有で追加して確認することは？",
+      "explanation": "内容の保護だけで、誤共有は防ぎきれません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "正しい相手と必要な権限へ共有しているか。"
+        },
+        {
+          "id": "c2",
+          "text": "暗号化すれば宛先は一切見なくてよい。"
+        },
+        {
+          "id": "c3",
+          "text": "必ずSNSへ鍵を公開する。"
+        },
+        {
+          "id": "c4",
+          "text": "ファイル名を変えれば鍵が不要になる。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    }
+  ]
+}

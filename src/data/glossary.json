@@ -1,0 +1,258 @@
+[
+  {
+    "id": "ip-term1",
+    "term": "IT",
+    "description": "情報を収集・処理・伝達する技術の総称。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term2",
+    "term": "利益",
+    "description": "一定の期間の収益から費用を引いた差額。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term3",
+    "term": "KPI",
+    "description": "目標へ近づいているかを測るための指標。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term4",
+    "term": "ステークホルダー",
+    "description": "活動に関わり、影響を受ける人や組織。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term5",
+    "term": "SWOT",
+    "description": "内部の強み・弱みと外部の機会・脅威を分ける整理。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term6",
+    "term": "PDCA",
+    "description": "計画・実行・確認・改善を繰り返す考え方。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term7",
+    "term": "要件",
+    "description": "仕組みが満たすべき条件。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term8",
+    "term": "非機能要件",
+    "description": "性能、使える時間、権限などの品質や制約の条件。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term9",
+    "term": "RFP",
+    "description": "目的や要件を示して提案を求めるための文書。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term10",
+    "term": "TCO",
+    "description": "導入後の運用なども含めた全体の費用を見る考え方。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term11",
+    "term": "アジャイル",
+    "description": "短い単位で確認と改善を繰り返す開発の考え方。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term12",
+    "term": "回帰テスト",
+    "description": "変更により既存の動作へ影響がないか確認するテスト。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term13",
+    "term": "WBS",
+    "description": "成果物や作業を分解して整理した構造。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term14",
+    "term": "リスク",
+    "description": "目標に影響する不確かな出来事。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term15",
+    "term": "SLA",
+    "description": "サービスの水準と、その確認条件についての合意。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term16",
+    "term": "システム監査",
+    "description": "独立した立場から仕組みや運用を評価する活動。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term17",
+    "term": "CPU",
+    "description": "命令を実行する中心的な装置。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term18",
+    "term": "OS",
+    "description": "機器や記憶領域などを管理する基本ソフト。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term19",
+    "term": "ビット",
+    "description": "0と1など、二つの状態を区別する情報の単位。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term20",
+    "term": "アルゴリズム",
+    "description": "問題を解くための手順。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term21",
+    "term": "主キー",
+    "description": "表の一行を一意に識別するための項目。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term22",
+    "term": "トランザクション",
+    "description": "全体を一まとまりとして完了・取消しする処理。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term23",
+    "term": "DNS",
+    "description": "ドメイン名に対応する情報を調べる仕組み。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term24",
+    "term": "SaaS",
+    "description": "アプリをサービスとして利用する形。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term25",
+    "term": "機密性",
+    "description": "許された人だけが情報を扱える性質。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term26",
+    "term": "完全性",
+    "description": "情報の正しさや整合した状態を保つ性質。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term27",
+    "term": "可用性",
+    "description": "必要なときに利用できる性質。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term28",
+    "term": "認証",
+    "description": "誰であるかを確かめること。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term29",
+    "term": "認可",
+    "description": "どの操作を許可するかを決めること。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term30",
+    "term": "多要素認証",
+    "description": "異なる種類の要素を組み合わせて本人を確かめる方法。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term31",
+    "term": "相関",
+    "description": "二つの値に一緒に変化する傾向があること。原因の証明とは別。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  },
+  {
+    "id": "ip-term32",
+    "term": "生成AI",
+    "description": "入力に応じて文章や画像などを生成する技術。出力には誤りや偏りがあり得る。",
+    "referenceIds": [
+      "ip-syllabus-65"
+    ]
+  }
+]

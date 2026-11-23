@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day08",
+  "day": 8,
+  "title": "ハードウェアとソフトウェア",
+  "category": "テクノロジ",
+  "goals": [
+    "CPU、記憶、入出力の役割を区別します。",
+    "土台と目的のソフト、保存と復元を分けて確認します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65",
+    "ipa-sme-security"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day08-s1",
+      "title": "処理・記憶・入出力",
+      "paragraphs": [
+        "CPUは命令を実行する中心的な装置です。主記憶は実行中のデータなどを置く場所、補助記憶はSSDなど保存のための装置です。性能を見るときは一つの数値だけでなく、処理内容や構成も考えます。",
+        "キーボードやマイクは入力、画面やスピーカーは出力を担います。同じ機器が複数の役割を持つ場合もあります。容量は記憶できる量、転送速度は一定時間に運べる量なので、単位を区別します。"
+      ],
+      "keyPoint": "CPU、記憶、入出力の役割を区別します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "処理・記憶・入出力の見方",
+        "description": "CPU、記憶、入出力の役割を区別します。",
+        "items": [
+          {
+            "label": "入力",
+            "detail": "データを受け取る"
+          },
+          {
+            "label": "処理・記憶",
+            "detail": "計算し必要な情報を保持"
+          },
+          {
+            "label": "出力",
+            "detail": "結果を伝える"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day08-s2",
+      "title": "OSとアプリを分ける",
+      "paragraphs": [
+        "OSは、機器や記憶領域などの資源を管理し、アプリが動く土台になります。アプリは文書作成や会計など目的の仕事を行います。OSとアプリの更新は、互換性と安全性を確認して行います。",
+        "バックアップは、故障や誤削除に備えて別のコピーを保管することです。コピーがあっても復元できるとは限らないので、戻し方を確認します。ライセンスはソフトを使える条件であり、コピーできることと使用を許可されることは別です。"
+      ],
+      "keyPoint": "土台と目的のソフト、保存と復元を分けて確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security"
+      ],
+      "diagram": {
+        "title": "OSとアプリを分けるの見方",
+        "description": "土台と目的のソフト、保存と復元を分けて確認します。",
+        "items": [
+          {
+            "label": "OS",
+            "detail": "資源と実行環境を管理"
+          },
+          {
+            "label": "アプリ",
+            "detail": "目的の作業を行う"
+          },
+          {
+            "label": "保全",
+            "detail": "更新と復元を確認"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day08-q01",
+      "sectionId": "ip26-day08-s1",
+      "category": "テクノロジ",
+      "prompt": "CPUの主な役割は？",
+      "explanation": "処理を担う装置です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "画面の色を印刷することだけ"
+        },
+        {
+          "id": "c2",
+          "text": "命令を解釈し実行する。"
+        },
+        {
+          "id": "c3",
+          "text": "すべてのデータを永久保存することだけ"
+        },
+        {
+          "id": "c4",
+          "text": "利用者の契約を締結すること"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day08-q02",
+      "sectionId": "ip26-day08-s1",
+      "category": "テクノロジ",
+      "prompt": "一般的な主記憶とSSDの区別として適切なのは？",
+      "explanation": "処理中の置き場所と保存装置を区別します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ずどちらも印刷装置である。"
+        },
+        {
+          "id": "c2",
+          "text": "SSDは入力専用である。"
+        },
+        {
+          "id": "c3",
+          "text": "主記憶は実行中の情報、SSDは保存のために用いる。"
+        },
+        {
+          "id": "c4",
+          "text": "主記憶は利用者の法律相談を行う。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day08-q03",
+      "sectionId": "ip26-day08-s1",
+      "category": "テクノロジ",
+      "prompt": "マイクの主な役割は？",
+      "explanation": "信号の入出力の方向を考えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "データを印刷する。"
+        },
+        {
+          "id": "c2",
+          "text": "映像を表示する。"
+        },
+        {
+          "id": "c3",
+          "text": "ネットワークの経路を選ぶ。"
+        },
+        {
+          "id": "c4",
+          "text": "音声を入力する。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day08-q04",
+      "sectionId": "ip26-day08-s1",
+      "category": "テクノロジ",
+      "prompt": "記憶容量と転送速度について正しいのは？",
+      "explanation": "機器の指標は意味と条件を区別します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "量と時間当たりの量は別なので単位を確認する。"
+        },
+        {
+          "id": "c2",
+          "text": "大きい数字なら単位は見なくてよい。"
+        },
+        {
+          "id": "c3",
+          "text": "両者は同じ量を表す。"
+        },
+        {
+          "id": "c4",
+          "text": "容量が大きいほど全処理が必ず速い。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day08-q05",
+      "sectionId": "ip26-day08-s2",
+      "category": "テクノロジ",
+      "prompt": "OSの役割として適切なのは？",
+      "explanation": "アプリを実行するための土台を担います。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべての会社の利益を算定する。"
+        },
+        {
+          "id": "c2",
+          "text": "機器や記憶領域などを管理する。"
+        },
+        {
+          "id": "c3",
+          "text": "どの文書にも内容の正しさを保証する。"
+        },
+        {
+          "id": "c4",
+          "text": "すべてのアプリを同時に削除する。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day08-q06",
+      "sectionId": "ip26-day08-s2",
+      "category": "テクノロジ",
+      "prompt": "バックアップの有効性を確かめる方法は？",
+      "explanation": "保存だけでなく復元の確認が重要です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ファイル名だけを眺める。"
+        },
+        {
+          "id": "c2",
+          "text": "同じ装置の故障箇所へ上書きする。"
+        },
+        {
+          "id": "c3",
+          "text": "必要なデータを復元できるか試す。"
+        },
+        {
+          "id": "c4",
+          "text": "コピーの数だけで永久に保証する。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day08-q07",
+      "sectionId": "ip26-day08-s2",
+      "category": "テクノロジ",
+      "prompt": "更新プログラムの適用について適切なのは？",
+      "explanation": "安全性と安定した運用を両立する確認です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "入手元が不明でも必ず実行する。"
+        },
+        {
+          "id": "c2",
+          "text": "更新は常に不要と決める。"
+        },
+        {
+          "id": "c3",
+          "text": "確認なしで全設定を公開する。"
+        },
+        {
+          "id": "c4",
+          "text": "提供元と互換性、作業への影響を確認する。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day08-q08",
+      "sectionId": "ip26-day08-s2",
+      "category": "テクノロジ",
+      "prompt": "ソフトウェアのライセンスで確かめることは？",
+      "explanation": "利用条件と実際の使い方が合うかを確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "ipa-sme-security",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "許可される利用範囲や条件"
+        },
+        {
+          "id": "c2",
+          "text": "画面の明るさだけ"
+        },
+        {
+          "id": "c3",
+          "text": "ファイルの大きさだけ"
+        },
+        {
+          "id": "c4",
+          "text": "利用者の身長だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    }
+  ]
+}

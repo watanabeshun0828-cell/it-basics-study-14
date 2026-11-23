@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day07",
+  "day": 7,
+  "title": "サービス管理と監査",
+  "category": "マネジメント",
+  "goals": [
+    "復旧と原因調査、測る条件を分けて管理します。",
+    "変更は記録と承認、監査は独立性と証拠を意識します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day07-s1",
+      "title": "運用でサービスを支える",
+      "paragraphs": [
+        "運用では、システムを使える状態に保ち、問合せや障害へ対応します。インシデントは、予定どおりにサービスを使えない出来事などです。まず業務の復旧を考え、原因の調査や再発防止につなげます。",
+        "SLAは、提供するサービスの水準についての合意です。利用可能時間や応答など、何をどの条件で測るかをそろえます。障害が起こらないという無条件の保証とは区別します。"
+      ],
+      "keyPoint": "復旧と原因調査、測る条件を分けて管理します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "運用でサービスを支えるの見方",
+        "description": "復旧と原因調査、測る条件を分けて管理します。",
+        "items": [
+          {
+            "label": "受付",
+            "detail": "状況と影響を把握"
+          },
+          {
+            "label": "復旧",
+            "detail": "利用を回復する"
+          },
+          {
+            "label": "再発防止",
+            "detail": "原因を調べる"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day07-s2",
+      "title": "変更と独立した確認",
+      "paragraphs": [
+        "運用中の設定を変えるときは、影響、承認、手順、戻し方を確認します。変更履歴がなければ、いつ何が変わったかを調べにくくなります。日常の小さな変更も管理の対象です。",
+        "システム監査は、独立した立場から仕組みや運用を評価し、助言などにつなげます。監査する人と運用を担当する人の役割を区別します。記録を都合よく改変せず、事実を確認できる証拠を保ちます。"
+      ],
+      "keyPoint": "変更は記録と承認、監査は独立性と証拠を意識します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "変更と独立した確認の見方",
+        "description": "変更は記録と承認、監査は独立性と証拠を意識します。",
+        "items": [
+          {
+            "label": "変更",
+            "detail": "影響・承認・戻し方"
+          },
+          {
+            "label": "証拠",
+            "detail": "記録で確認"
+          },
+          {
+            "label": "監査",
+            "detail": "独立した評価"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day07-q01",
+      "sectionId": "ip26-day07-s1",
+      "category": "マネジメント",
+      "prompt": "予約システムが使えなくなったとき、初動として適切なのは？",
+      "explanation": "影響と対応窓口を整理して復旧します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "利用者に知らせず記録を消す。"
+        },
+        {
+          "id": "c2",
+          "text": "原因の推測だけで全機器を廃棄する。"
+        },
+        {
+          "id": "c3",
+          "text": "影響を把握し、連絡と復旧手順を進める。"
+        },
+        {
+          "id": "c4",
+          "text": "必ず全データを公開する。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day07-q02",
+      "sectionId": "ip26-day07-s1",
+      "category": "マネジメント",
+      "prompt": "サービス停止の再発を減らす活動として適切なのは？",
+      "explanation": "復旧と再発防止は目的を分けて進めます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "復旧したら記録をすべて捨てる。"
+        },
+        {
+          "id": "c2",
+          "text": "原因を調べず同じ設定に固定する。"
+        },
+        {
+          "id": "c3",
+          "text": "担当者を決めずに放置する。"
+        },
+        {
+          "id": "c4",
+          "text": "原因を調査し、対策の効果を確認する。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day07-q03",
+      "sectionId": "ip26-day07-s1",
+      "category": "マネジメント",
+      "prompt": "SLAで明確にする内容は？",
+      "explanation": "双方が同じ条件で水準を確認できるようにします。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "サービス水準と測定・責任の条件"
+        },
+        {
+          "id": "c2",
+          "text": "会社の制服の色だけ"
+        },
+        {
+          "id": "c3",
+          "text": "障害を無条件でゼロとする文言だけ"
+        },
+        {
+          "id": "c4",
+          "text": "利用者の個人の感想だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day07-q04",
+      "sectionId": "ip26-day07-s1",
+      "category": "マネジメント",
+      "prompt": "仮定：月の予定サービス時間100時間、停止2時間。稼働した時間の割合は？",
+      "explanation": "除外条件なしと明示した単純な割合です。実際のSLAの条件とは別です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "（100−2）÷100×100＝98",
+          "operator": "product",
+          "operands": [
+            0.98,
+            100
+          ],
+          "result": 98,
+          "unit": "%",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "稼働時間の割合",
+          "expected": 98,
+          "unit": "%",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day07-q05",
+      "sectionId": "ip26-day07-s2",
+      "category": "マネジメント",
+      "prompt": "本番システムの設定変更で必要な準備は？",
+      "explanation": "変更による事故を減らすための管理です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "記録を残さず即時変更だけ"
+        },
+        {
+          "id": "c2",
+          "text": "影響確認、承認、変更手順と戻し方"
+        },
+        {
+          "id": "c3",
+          "text": "変更後に担当者を探すことだけ"
+        },
+        {
+          "id": "c4",
+          "text": "必ず全員へ管理権限を配ること"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day07-q06",
+      "sectionId": "ip26-day07-s2",
+      "category": "マネジメント",
+      "prompt": "監査における独立性の考え方として適切なのは？",
+      "explanation": "役割と客観性を保ちます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "運用担当の判断を無条件で追認する。"
+        },
+        {
+          "id": "c2",
+          "text": "結果を好みに合わせて変更する。"
+        },
+        {
+          "id": "c3",
+          "text": "評価対象から独立した立場で客観的に確認する。"
+        },
+        {
+          "id": "c4",
+          "text": "証拠を見ずに結論を決める。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day07-q07",
+      "sectionId": "ip26-day07-s2",
+      "category": "マネジメント",
+      "prompt": "監査の証拠となるログを扱うときに適切なのは？",
+      "explanation": "後から事実を確認できる状態を保ちます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "都合の悪い記録だけ消す。"
+        },
+        {
+          "id": "c2",
+          "text": "誰でも編集できる場所へ置く。"
+        },
+        {
+          "id": "c3",
+          "text": "時刻をすべて同じ値にする。"
+        },
+        {
+          "id": "c4",
+          "text": "権限と保存ルールを設け、改変を防ぐ。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day07-q08",
+      "sectionId": "ip26-day07-s2",
+      "category": "マネジメント",
+      "prompt": "障害への連絡先や受付手順を決める目的は？",
+      "explanation": "運用の連携と対応の記録に役立ちます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "利用者が状況を伝え、対応が追跡できるようにする。"
+        },
+        {
+          "id": "c2",
+          "text": "すべての問合せを無条件に拒否するため"
+        },
+        {
+          "id": "c3",
+          "text": "個人情報をSNSへ出すため"
+        },
+        {
+          "id": "c4",
+          "text": "処理の責任を不明にするため"
+        }
+      ],
+      "correctChoiceId": "c1"
+    }
+  ]
+}

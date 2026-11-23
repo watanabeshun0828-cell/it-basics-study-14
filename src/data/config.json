@@ -1,0 +1,18 @@
+{
+  "appId": "it-basics-study-14",
+  "title": "IT BASICS STUDY 14",
+  "word": "IT",
+  "qualName": "ITパスポート",
+  "kind": "it",
+  "port": 4193,
+  "contentVersion": "2026.1",
+  "checkedAt": "2026-11-23",
+  "targetVersion": "シラバスVer.6.5／試験要綱Ver.5.6",
+  "guideCharacterUrl": "assets/mini-susume-kun.png",
+  "tagline": "仕事の場面から、ITの基礎をつかむ。",
+  "guideMessage": "条件を読み、手を動かして確かめましょう。分からないところは、講義と復習へ戻れます。",
+  "practiceNotice": "独自の確認演習と説明練習です。本試験の出題分布・IRT評価点を再現した模試ではありません。",
+  "scopeNotice": "ストラテジ・マネジメント・テクノロジの重点教材です。既存SESの基本情報・応用情報教材とは別の独自原稿を使います。アプリの正答率を本試験の評価点へ換算しません。",
+  "positioning": "非公式の学習補助教材・重点学習教材",
+  "notice": "14日は学習を分ける単位です。合格に必要な期間や標準学習時間ではありません。"
+}

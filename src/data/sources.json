@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ip-overview",
+    "title": "IPA ITパスポート試験",
+    "url": "https://www.ipa.go.jp/shiken/kubun/ip.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026-11-23現行掲載",
+    "location": "対象者像・試験の位置付け",
+    "role": "出題範囲",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "ip-syllabus-index",
+    "title": "IPA 試験要綱・シラバス",
+    "url": "https://www.ipa.go.jp/shiken/syllabus/gaiyou.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "ページ更新2026-07-10、閲覧時の最新掲載版",
+    "location": "IPシラバス6.5、試験要綱5.6へのリンク",
+    "role": "出題範囲",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "ip-syllabus-65",
+    "title": "ITパスポート試験シラバス",
+    "url": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Ver.6.5、2026年1月。適用開始日は別途未確認",
+    "location": "全66ページの分野・項目。AIは本文18〜19ページ付近（PDF22〜23枚目）",
+    "role": "出題範囲",
+    "notes": "掲載日2026-01-08。現行資料の中小受託取引適正化法の表記に留意。公式過去問・例題は使用しない。"
+  },
+  {
+    "id": "ip-outline-56",
+    "title": "情報処理技術者試験 試験要綱",
+    "url": "https://www.ipa.go.jp/shiken/syllabus/rcu1hd00000141gq-att/youkou_ver5_6.pdf",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Ver.5.6、掲載日2026-07-06",
+    "location": "PDF19枚目の方式、22枚目の評価、27〜29枚目のIP範囲",
+    "role": "出題範囲",
+    "notes": "本試験はIRT方式。アプリの生の正答率を本試験の評価点に換算しない。"
+  },
+  {
+    "id": "ipa-sme-security",
+    "title": "IPA 中小企業の情報セキュリティ対策ガイドライン掲載ページ",
+    "url": "https://www.ipa.go.jp/security/guide/sme/about.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "第4.0版が現行掲載、2026-03-27公開",
+    "location": "掲載案内と関連資料の位置付け",
+    "role": "事実の根拠",
+    "notes": "配付ページを閲覧。本文PDFは未閲覧のため、詳細の根拠として扱わない。"
+  },
+  {
+    "id": "ppc-personal",
+    "title": "個人情報保護委員会 個人向けFAQ",
+    "url": "https://www.ppc.go.jp/personalinfo/faq/kojin/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026-11-23現行掲載",
+    "location": "Q1-1・Q1-2の個人情報の定義",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "postgres-tables",
+    "title": "PostgreSQL 19 Documentation：Creating a New Table",
+    "url": "https://www.postgresql.org/docs/current/tutorial-table.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "閲覧時currentはPostgreSQL19",
+    "location": "2.3 表、列、型の基本",
+    "role": "事実の根拠",
+    "notes": "資料のWeather設例などは転載・書き換え元として使用しない。"
+  },
+  {
+    "id": "dns-concepts",
+    "title": "IETF RFC1034 Domain Names Concepts and Facilities",
+    "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "1987年11月",
+    "location": "DNSの基本概念。最新拡張仕様の全体ではない",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "http-semantics",
+    "title": "IETF RFC9110 HTTP Semantics",
+    "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2022年6月",
+    "location": "HTTP・HTTPS・要求と応答",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "nist-cloud",
+    "title": "NIST SP800-145 The NIST Definition of Cloud Computing",
+    "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2011年9月最終版",
+    "location": "掲載ページの概要とモデルの位置付け",
+    "role": "事実の根拠",
+    "notes": "掲載概要のみ閲覧。本文PDF未閲覧のため、個々のサービスモデルの詳細は別途一次資料で確認が必要。"
+  },
+  {
+    "id": "practice-assumptions",
+    "title": "独自の練習条件",
+    "url": null,
+    "checkedAt": "2026-11-23",
+    "appliesTo": "本教材2026.1",
+    "location": "架空の数値・組織・ケース",
+    "role": "練習用の仮定",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  }
+]

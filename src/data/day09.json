@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day09",
+  "day": 9,
+  "title": "データ表現・論理・アルゴリズム",
+  "category": "テクノロジ",
+  "goals": [
+    "表せる組合せと、データ量の単位を区別します。",
+    "初期値、条件、更新、終了を順に追います。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day09-s1",
+      "title": "数と単位を表す",
+      "paragraphs": [
+        "コンピューターでは、情報を0と1の組合せで表します。1ビットは二つの状態を区別し、nビットでは2のn乗通りを表せます。1バイトは8ビットです。転送時間を求めるときは、ビットとバイト、秒などの単位をそろえます。",
+        "論理演算のANDは両方が真のときに真、ORは少なくとも一方が真なら真、NOTは真偽を反転します。日常語の「または」と条件の違いがないか、具体的な真偽で確認します。"
+      ],
+      "keyPoint": "表せる組合せと、データ量の単位を区別します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "数と単位を表すの見方",
+        "description": "表せる組合せと、データ量の単位を区別します。",
+        "items": [
+          {
+            "label": "ビット",
+            "detail": "二つの状態"
+          },
+          {
+            "label": "組合せ",
+            "detail": "2のn乗"
+          },
+          {
+            "label": "論理",
+            "detail": "真偽の条件"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day09-s2",
+      "title": "手順を追って結果を考える",
+      "paragraphs": [
+        "アルゴリズムは問題を解くための手順です。順に処理する、条件で分ける、同じ処理を繰り返すなどを組み合わせます。コードの形だけを暗記せず、変数の値がどう変わるかを表にして追います。",
+        "探索は目的のデータを探すことです。二分探索は並んだデータの範囲を半分ずつ絞ります。前提として整列が必要です。処理の効率は、入力件数が増えたときの変化も考えます。"
+      ],
+      "keyPoint": "初期値、条件、更新、終了を順に追います。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "手順を追って結果を考えるの見方",
+        "description": "初期値、条件、更新、終了を順に追います。",
+        "items": [
+          {
+            "label": "初期値",
+            "detail": "どこから始めるか"
+          },
+          {
+            "label": "条件・更新",
+            "detail": "何を繰り返すか"
+          },
+          {
+            "label": "終了",
+            "detail": "いつ止めるか"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day09-q01",
+      "sectionId": "ip26-day09-s1",
+      "category": "テクノロジ",
+      "prompt": "3ビットで区別できる状態はいくつですか。",
+      "explanation": "各ビットの二つの状態を組み合わせます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "2³＝8",
+          "operator": "power",
+          "operands": [
+            2,
+            3
+          ],
+          "result": 8,
+          "unit": "通り",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "状態の数",
+          "expected": 8,
+          "unit": "通り",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day09-q02",
+      "sectionId": "ip26-day09-s1",
+      "category": "テクノロジ",
+      "prompt": "1バイトは8ビットという条件で、4バイトは何ビットですか。",
+      "explanation": "単位をバイトからビットへそろえます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "4×8＝32",
+          "operator": "product",
+          "operands": [
+            4,
+            8
+          ],
+          "result": 32,
+          "unit": "ビット",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "データ量",
+          "expected": 32,
+          "unit": "ビット",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day09-q03",
+      "sectionId": "ip26-day09-s1",
+      "category": "テクノロジ",
+      "prompt": "Aが真、Bが偽のとき、A AND Bは？",
+      "explanation": "ANDは両方が真のときだけ真です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "真"
+        },
+        {
+          "id": "c2",
+          "text": "偽"
+        },
+        {
+          "id": "c3",
+          "text": "常に数値1"
+        },
+        {
+          "id": "c4",
+          "text": "条件が一つなら真偽は決まらない。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day09-q04",
+      "sectionId": "ip26-day09-s1",
+      "category": "テクノロジ",
+      "prompt": "Aが偽、Bが真のとき、A OR Bは？",
+      "explanation": "少なくとも一方が真なので真です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "偽"
+        },
+        {
+          "id": "c2",
+          "text": "両方が真になるまで未定"
+        },
+        {
+          "id": "c3",
+          "text": "真"
+        },
+        {
+          "id": "c4",
+          "text": "常に空欄"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day09-q05",
+      "sectionId": "ip26-day09-s2",
+      "category": "テクノロジ",
+      "prompt": "xを1から始め、xに2を加える処理を3回行う。最終値は？",
+      "explanation": "1→3→5→7と更新を追います。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "code": "x ← 1\n3回繰り返す: x ← x + 2",
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "3"
+        },
+        {
+          "id": "c2",
+          "text": "6"
+        },
+        {
+          "id": "c3",
+          "text": "8"
+        },
+        {
+          "id": "c4",
+          "text": "7"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day09-q06",
+      "sectionId": "ip26-day09-s2",
+      "category": "テクノロジ",
+      "prompt": "二分探索を使う前提として適切なのは？",
+      "explanation": "中央との比較から探索範囲を絞るため、順序が必要です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "検索するキーについてデータが整列されている。"
+        },
+        {
+          "id": "c2",
+          "text": "データを毎回無作為に並べる。"
+        },
+        {
+          "id": "c3",
+          "text": "すべてのデータが必ず同じ値である。"
+        },
+        {
+          "id": "c4",
+          "text": "比較を一切行わない。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day09-q07",
+      "sectionId": "ip26-day09-s2",
+      "category": "テクノロジ",
+      "prompt": "繰返し処理で必ず確認することは？",
+      "explanation": "条件が変わらなければ、意図せず続き続ける可能性があります。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "変数名の文字数だけ"
+        },
+        {
+          "id": "c2",
+          "text": "終了する条件と、条件へ近づく更新"
+        },
+        {
+          "id": "c3",
+          "text": "処理を止めないことだけ"
+        },
+        {
+          "id": "c4",
+          "text": "画面の配色だけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day09-q08",
+      "sectionId": "ip26-day09-s2",
+      "category": "テクノロジ",
+      "prompt": "手順の結果を確認するために適した方法は？",
+      "explanation": "トレースにより、分岐と更新の理解を確かめられます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "処理を一切読まず名前だけ見る。"
+        },
+        {
+          "id": "c2",
+          "text": "途中の値をすべて隠す。"
+        },
+        {
+          "id": "c3",
+          "text": "小さな具体例で変数の値を順に記録する。"
+        },
+        {
+          "id": "c4",
+          "text": "最初から正しいと仮定する。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    }
+  ]
+}

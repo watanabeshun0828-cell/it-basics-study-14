@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day01",
+  "day": 1,
+  "title": "会社の活動とITの役割",
+  "category": "ストラテジ",
+  "goals": [
+    "目的、業務、手段を分けて考えます。",
+    "指標の数値と、誰の課題かを一緒に確認します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day01-s1",
+      "title": "目的から業務を考える",
+      "paragraphs": [
+        "会社は商品やサービスを提供し、収入と費用を管理して活動します。売上は販売による収入のもと、利益は収益から費用を引いた差です。売上が増えても、それ以上に費用が増えれば利益は減ります。",
+        "ITは目的を達成する手段です。注文の転記が多くて困っているなら、まず誰が何を何回転記しているかを調べます。道具の名前から決めず、減らしたい手間や誤りを具体化します。"
+      ],
+      "keyPoint": "目的、業務、手段を分けて考えます。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "目的から業務を考えるの見方",
+        "description": "目的、業務、手段を分けて考えます。",
+        "items": [
+          {
+            "label": "目的",
+            "detail": "何を良くするか"
+          },
+          {
+            "label": "業務",
+            "detail": "誰が何をするか"
+          },
+          {
+            "label": "IT",
+            "detail": "必要な部分を支える"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day01-s2",
+      "title": "数値と関係者を捉える",
+      "paragraphs": [
+        "KPIは、目標へ近づいているかを継続して確かめる指標です。問合せへの対応を改善するなら、件数だけでなく返答までの時間や再問合せの割合も候補になります。指標は目的に合わせて選びます。",
+        "ステークホルダーは、仕事に関わり影響を受ける人や組織です。経営者だけでなく、担当者、利用者、取引先にも確認します。売上や費用などの仮の数値は、単位をそろえて計算しましょう。"
+      ],
+      "keyPoint": "指標の数値と、誰の課題かを一緒に確認します。",
+      "referenceIds": [
+        "ip-syllabus-65"
+      ],
+      "diagram": {
+        "title": "数値と関係者を捉えるの見方",
+        "description": "指標の数値と、誰の課題かを一緒に確認します。",
+        "items": [
+          {
+            "label": "関係者",
+            "detail": "困っている人を知る"
+          },
+          {
+            "label": "指標",
+            "detail": "変化を測る"
+          },
+          {
+            "label": "見直し",
+            "detail": "結果から改善する"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day01-q01",
+      "sectionId": "ip26-day01-s1",
+      "category": "ストラテジ",
+      "prompt": "注文の二重入力を減らしたい。最初に行う調査は？",
+      "explanation": "目的に関係する現在の業務を把握してから、手段を選びます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "入力する人・項目・回数と誤りを調べる。"
+        },
+        {
+          "id": "c2",
+          "text": "人気のシステムの購入を先に決める。"
+        },
+        {
+          "id": "c3",
+          "text": "全員のパソコンを同じ色にする。"
+        },
+        {
+          "id": "c4",
+          "text": "売上だけを調べ、入力作業は見ない。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day01-q02",
+      "sectionId": "ip26-day01-s1",
+      "category": "ストラテジ",
+      "prompt": "売上と利益について適切な説明は？",
+      "explanation": "利益は収益と費用の差なので、販売額だけで判断できません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "売上が増えた分だけ必ず利益も増える。"
+        },
+        {
+          "id": "c2",
+          "text": "売上が増えても、費用次第で利益は減り得る。"
+        },
+        {
+          "id": "c3",
+          "text": "利益は費用を引く前の販売額である。"
+        },
+        {
+          "id": "c4",
+          "text": "入金があれば必ず同額の利益である。"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day01-q03",
+      "sectionId": "ip26-day01-s1",
+      "category": "ストラテジ",
+      "prompt": "架空店舗の収益は80万円、費用は62万円。他の損益なし。利益を求めてください。",
+      "explanation": "同じ単位で収益から費用を引きます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "80−62＝18",
+          "operator": "difference",
+          "operands": [
+            80,
+            62
+          ],
+          "result": 18,
+          "unit": "万円",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "利益",
+          "expected": 18,
+          "unit": "万円",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day01-q04",
+      "sectionId": "ip26-day01-s1",
+      "category": "ストラテジ",
+      "prompt": "企業の役割を分ける組織で、担当範囲が不明確なときの対応は？",
+      "explanation": "組織と業務の関係を見える形にし、責任や連携を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "一番詳しい人に全業務を口頭で頼む。"
+        },
+        {
+          "id": "c2",
+          "text": "システムがあるので責任者は置かない。"
+        },
+        {
+          "id": "c3",
+          "text": "仕事の責任者と引渡し先を確認する。"
+        },
+        {
+          "id": "c4",
+          "text": "全員が同じ処理を重複して行う。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day01-q05",
+      "sectionId": "ip26-day01-s2",
+      "category": "ストラテジ",
+      "prompt": "問合せへの初回返答を早める活動のKPIとして直接対応するものは？",
+      "explanation": "改善目的と直接つながる測定指標を選びます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "担当者の靴の数"
+        },
+        {
+          "id": "c2",
+          "text": "会社の所在地の面積"
+        },
+        {
+          "id": "c3",
+          "text": "印刷用紙の色"
+        },
+        {
+          "id": "c4",
+          "text": "受付から初回返答までの時間"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day01-q06",
+      "sectionId": "ip26-day01-s2",
+      "category": "ストラテジ",
+      "prompt": "新しい予約画面の関係者に含めるべき人は？",
+      "explanation": "利用する側と運用する側の双方に影響を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "予約する利用者と予約を処理する担当者"
+        },
+        {
+          "id": "c2",
+          "text": "購入を決める経営者だけ"
+        },
+        {
+          "id": "c3",
+          "text": "ソフトの販売会社だけ"
+        },
+        {
+          "id": "c4",
+          "text": "当該業務に関わらない知人だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day01-q07",
+      "sectionId": "ip26-day01-s2",
+      "category": "ストラテジ",
+      "prompt": "指標を毎月測るときにそろえる必要があるものは？",
+      "explanation": "条件が変わると、数値の変化が改善の結果か比較できません。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "集計担当者の好みだけ"
+        },
+        {
+          "id": "c2",
+          "text": "対象範囲、数え方、期間"
+        },
+        {
+          "id": "c3",
+          "text": "結果が良く見える値だけ"
+        },
+        {
+          "id": "c4",
+          "text": "毎月異なる計算方法"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day01-q08",
+      "sectionId": "ip26-day01-s2",
+      "category": "ストラテジ",
+      "prompt": "問合せ20件のうち、当日返答したものは15件。割合を求めてください。",
+      "explanation": "対象の件数を分母とし、百分率へ変換します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "15÷20×100＝75",
+          "operator": "product",
+          "operands": [
+            0.75,
+            100
+          ],
+          "result": 75,
+          "unit": "%",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "当日返答の割合",
+          "expected": 75,
+          "unit": "%",
+          "calculationIndex": 0
+        }
+      ]
+    }
+  ]
+}

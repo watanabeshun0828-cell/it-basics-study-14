@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "id": "ip26-day11",
+  "day": 11,
+  "title": "ネットワークとクラウド",
+  "category": "テクノロジ",
+  "goals": [
+    "名前の解決、通信、内容の信頼性を分けて確認します。",
+    "提供範囲と利用者の管理する範囲を確認します。"
+  ],
+  "referenceIds": [
+    "ip-syllabus-65",
+    "dns-concepts",
+    "http-semantics",
+    "nist-cloud"
+  ],
+  "sections": [
+    {
+      "id": "ip26-day11-s1",
+      "title": "端末からサーバーへ届く",
+      "paragraphs": [
+        "ネットワークは複数の機器が情報をやり取りする仕組みです。IPアドレスは機器同士の通信に使う識別情報の一つです。DNSはドメイン名に対応する情報を調べる仕組みで、名前と通信先の関係を支えます。",
+        "HTTPは要求と応答でWebの情報をやり取りする仕組みです。HTTPSではTLSによる通信の保護を用います。ただしHTTPSの表示だけで、サイトの内容や運営者が必ず信頼できるとは判断できません。"
+      ],
+      "keyPoint": "名前の解決、通信、内容の信頼性を分けて確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "dns-concepts",
+        "http-semantics"
+      ],
+      "diagram": {
+        "title": "端末からサーバーへ届くの見方",
+        "description": "名前の解決、通信、内容の信頼性を分けて確認します。",
+        "items": [
+          {
+            "label": "DNS",
+            "detail": "名前に対応する情報"
+          },
+          {
+            "label": "通信",
+            "detail": "要求と応答"
+          },
+          {
+            "label": "確認",
+            "detail": "宛先と内容の正しさ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ip26-day11-s2",
+      "title": "サービスの使い方を分ける",
+      "paragraphs": [
+        "クラウドでは、ネットワークを通じて計算や保存などの資源を利用します。SaaSはアプリを使う形、PaaSはアプリを動かす基盤を使う形、IaaSは仮想サーバーなどの基盤資源を使う形です。",
+        "外部サービスを使っても、利用者側の権限設定やデータ管理が不要になるわけではありません。誰がどの範囲を管理するかを確認します。費用や利用条件はサービスと構成ごとに違うため、宣伝の印象だけで判断しません。"
+      ],
+      "keyPoint": "提供範囲と利用者の管理する範囲を確認します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "nist-cloud"
+      ],
+      "diagram": {
+        "title": "サービスの使い方を分けるの見方",
+        "description": "提供範囲と利用者の管理する範囲を確認します。",
+        "items": [
+          {
+            "label": "SaaS",
+            "detail": "アプリの利用"
+          },
+          {
+            "label": "PaaS",
+            "detail": "実行基盤の利用"
+          },
+          {
+            "label": "IaaS",
+            "detail": "基盤資源の利用"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "ip26-day11-q01",
+      "sectionId": "ip26-day11-s1",
+      "category": "テクノロジ",
+      "prompt": "DNSの主な役割は？",
+      "explanation": "名前と通信先などの情報の対応を支えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "dns-concepts",
+        "http-semantics",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "文書の内容の真偽を保証する。"
+        },
+        {
+          "id": "c2",
+          "text": "すべての利用者の権限を自動で決める。"
+        },
+        {
+          "id": "c3",
+          "text": "ドメイン名に対応する情報を調べる。"
+        },
+        {
+          "id": "c4",
+          "text": "画像を紙へ印刷する。"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day11-q02",
+      "sectionId": "ip26-day11-s1",
+      "category": "テクノロジ",
+      "prompt": "クライアントとサーバーのやり取りの基本的な説明は？",
+      "explanation": "HTTPなどの要求・応答モデルを理解します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "dns-concepts",
+        "http-semantics",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "同じ機器だけが一方的に永久保存する。"
+        },
+        {
+          "id": "c2",
+          "text": "利用者の同意を自動で代行する。"
+        },
+        {
+          "id": "c3",
+          "text": "すべての通信を紙で行う。"
+        },
+        {
+          "id": "c4",
+          "text": "要求を送り、それに応答する。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day11-q03",
+      "sectionId": "ip26-day11-s1",
+      "category": "テクノロジ",
+      "prompt": "HTTPSであることから言える範囲として適切なのは？",
+      "explanation": "通信の保護と、相手や情報への信頼は別の確認です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "dns-concepts",
+        "http-semantics",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "通信の保護を用いるが、内容の正しさは別に確認する。"
+        },
+        {
+          "id": "c2",
+          "text": "書かれた情報は必ず事実である。"
+        },
+        {
+          "id": "c3",
+          "text": "詐欺サイトは存在できない。"
+        },
+        {
+          "id": "c4",
+          "text": "ログイン情報を誰に渡してもよい。"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "ip26-day11-q04",
+      "sectionId": "ip26-day11-s1",
+      "category": "テクノロジ",
+      "prompt": "仮定：10MBを毎秒2MBで転送する。追加の待ち時間は無視する。所要時間は？",
+      "explanation": "同じ容量単位で割り、秒を求めます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "dns-concepts",
+        "http-semantics",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [
+        {
+          "expression": "10÷2＝5",
+          "operator": "quotient",
+          "operands": [
+            10,
+            2
+          ],
+          "result": 5,
+          "unit": "秒",
+          "rounding": "none"
+        }
+      ],
+      "format": "numeric",
+      "fields": [
+        {
+          "id": "f1",
+          "label": "転送時間",
+          "expected": 5,
+          "unit": "秒",
+          "calculationIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "ip26-day11-q05",
+      "sectionId": "ip26-day11-s2",
+      "category": "テクノロジ",
+      "prompt": "完成したメールアプリをインターネット経由で利用する形は？",
+      "explanation": "利用者がアプリをサービスとして使う形です。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "nist-cloud",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "IaaSだけ"
+        },
+        {
+          "id": "c2",
+          "text": "SaaS"
+        },
+        {
+          "id": "c3",
+          "text": "物理媒体の専有だけ"
+        },
+        {
+          "id": "c4",
+          "text": "CPU内部の演算だけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "ip26-day11-q06",
+      "sectionId": "ip26-day11-s2",
+      "category": "テクノロジ",
+      "prompt": "仮想サーバーなどの基盤資源を利用する形は？",
+      "explanation": "提供される資源の範囲を区別します。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "nist-cloud",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "紙の帳簿だけ"
+        },
+        {
+          "id": "c2",
+          "text": "プリンターのトナー交換"
+        },
+        {
+          "id": "c3",
+          "text": "IaaS"
+        },
+        {
+          "id": "c4",
+          "text": "色票の比較"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "ip26-day11-q07",
+      "sectionId": "ip26-day11-s2",
+      "category": "テクノロジ",
+      "prompt": "クラウドへファイルを置くときの適切な考え方は？",
+      "explanation": "サービス利用者が管理する事項もあります。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "nist-cloud",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "サービス会社がいるので共有設定は不要。"
+        },
+        {
+          "id": "c2",
+          "text": "初期設定のまま全情報を公開する。"
+        },
+        {
+          "id": "c3",
+          "text": "暗号化すれば宛先は確認しなくてよい。"
+        },
+        {
+          "id": "c4",
+          "text": "共有範囲と権限、保管条件を利用者側も確認する。"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "ip26-day11-q08",
+      "sectionId": "ip26-day11-s2",
+      "category": "テクノロジ",
+      "prompt": "PaaSを選ぶ判断に関係するものは？",
+      "explanation": "アプリを作り動かすための基盤の提供範囲を考えます。",
+      "referenceIds": [
+        "ip-syllabus-65",
+        "nist-cloud",
+        "practice-assumptions"
+      ],
+      "assumptions": "本アプリ独自の確認問題です。会社・人物・金額・件数・処理条件は、明示した練習用の仮定です。実際の案件の判断や本試験の採点を表すものではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必要なアプリ実行基盤と利用条件"
+        },
+        {
+          "id": "c2",
+          "text": "必ず無料かどうかだけ"
+        },
+        {
+          "id": "c3",
+          "text": "使う人の名前の長さだけ"
+        },
+        {
+          "id": "c4",
+          "text": "ファイルの拡張子を消すことだけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    }
+  ]
+}
